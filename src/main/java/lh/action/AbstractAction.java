@@ -7,6 +7,7 @@ import org.springframework.context.support.ResourceBundleMessageSource;
 import org.springframework.web.bind.WebDataBinder;
 import org.springframework.web.bind.annotation.InitBinder;
 import org.springframework.web.multipart.MultipartFile;
+import org.springframework.web.servlet.ModelAndView;
 
 import javax.servlet.http.HttpServletRequest;
 import java.io.File;
@@ -19,6 +20,7 @@ import java.util.Locale;
 import java.util.UUID;
 
 public abstract class AbstractAction {
+    protected String title ="";
     @Autowired
     private ResourceBundleMessageSource resourceBundleMessageSource;
 
@@ -27,9 +29,14 @@ public abstract class AbstractAction {
         binder.registerCustomEditor(Date.class, new CustomDateEditor(new SimpleDateFormat("yyyy-MM-dd"), true));
     }
 
-    public String getResourceValue(String key, Object... agrs) {
+    public void setMsgAndUrl(String msg, String url, ModelAndView modelAndView) {
+        modelAndView.addObject("msg", getResourceValue(msg, title));
+        modelAndView.addObject("url", getResourceValue(url, title));
+    }
+
+    public String getResourceValue(String key, Object... agr) {
         try {
-            return resourceBundleMessageSource.getMessage(key, agrs, Locale.getDefault());
+            return resourceBundleMessageSource.getMessage(key, agr, Locale.getDefault());
         } catch (Exception e) {
             return null;//如果处异常，说明资源没有这key,直接返回null
         }
@@ -77,6 +84,7 @@ public abstract class AbstractAction {
 
         }
     }
+
 
     abstract String setUploadPath();
 
