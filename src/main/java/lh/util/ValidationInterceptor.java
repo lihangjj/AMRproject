@@ -17,7 +17,7 @@ public class ValidationInterceptor implements HandlerInterceptor {
         if (errorsMap.size() == 0) {
             return true;//放行
         }
-        String path = "/WEB-INF/pages/errors.jsp";
+        String path = "/pages/errors.jsp";
         if (errorsMap.get("errorsPage") != null) {//看是否设置了指定的错误页路径
             path = errorsMap.get("errorsPage");
             errorsMap.remove("errorsPage");//移除最后添加的那条页面路径
@@ -26,7 +26,6 @@ public class ValidationInterceptor implements HandlerInterceptor {
         request.getRequestDispatcher(path).forward(request, response);
         return false;
     }
-
 
     @Override
     public void postHandle(HttpServletRequest httpServletRequest, HttpServletResponse httpServletResponse, Object o, ModelAndView modelAndView) throws Exception {

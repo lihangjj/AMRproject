@@ -21,8 +21,8 @@ public class validateUtil {
         Object object = handlerMethod.getBean();
         String className = handlerMethod.getBeanType().getSimpleName();
         String methodName = handlerMethod.getMethod().getName();
-        String key = className + "." + methodName + ".rules";//规则的key
-        String errorsPageKey = className + "." + methodName + ".errors.page";//错误页的key
+        String key = className + "." + methodName + ".rules";//规则的key,如LoginAction.login.rules=eid:string|password:string|code:rand
+        String errorsPageKey = className + "." + methodName + ".errors.page";//错误页的key,如LoginAction.login.errors.page=/login.jsp
 
         String errorsPage = (String) getResourceValue.invoke(object, errorsPageKey, null);//错误页路径
 
@@ -37,8 +37,10 @@ public class validateUtil {
                 String rule = x.split(":")[1];
                 String value = request.getParameter(name);
                 if (isEmpty(value)) {
+                    //参数名字，
                     errorsMap.put(name, (String) getResourceValue.invoke(object, "validate.string.msg", null));
                 } else {
+                    //参数错误说明
                     String msg = (String) getResourceValue.invoke(object, "validate." + rule + ".msg", null);
                     switch (rule) {
                         case "int":
@@ -62,7 +64,7 @@ public class validateUtil {
                             }
                             break;
                         case "rand":
-                            if (!value.equals(request.getSession().getAttribute("rand"))) {//验证码验证
+                            if (!value.equalsIgnoreCase((String) request.getSession().getAttribute("rand"))) {//验证码验证
                                 errorsMap.put(name, msg);
                             }
                             break;
@@ -85,7 +87,11 @@ public class validateUtil {
                 if (mimeRules == null) {//表示没有设置单独的验证规则，就用公共的验证规则
                     mimeRules = (String) getResourceValue.invoke(object, "mime.rules", null);
                 }
-                errorsMap.put("文件类型不支持，请确定文件类型为以下类型：", mimeRules);
+                errorsMap.put("文件类型不支持!请确定文件类型为以下类型","文件类型不支持!请确定文件类型为以下类型");
+                String[] mime = mimeRules.split("\\|");
+                for (int x = 0; x < mime.length; x++) {
+                    errorsMap.put("类型"+(x+1), mime[x]);
+                }
             }
 
         }

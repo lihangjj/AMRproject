@@ -31,9 +31,9 @@ public class MemberAction extends AbstractAction {
         } catch (Exception e) {
             e.printStackTrace();
         }
-
         return null;
     }
+
 
     @Override
     String setUploadPath() {

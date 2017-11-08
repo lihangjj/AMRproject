@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="lh.dao.IEmpDAO">
+
+    <select id="findLogin" parameterType="Emp" resultType="Emp">
+        SELECT eid,name,photo,aflag,did,password FROM emp
+        <where>
+            eid=#{eid} and password=#{password}
+        </where>
+    </select>
+    <select id="findGroupsByEid" parameterType="java.lang.Integer" resultType="Groups">
+        select gid,title,type from groups
+        <where>
+            gid IN (SELECT gid FROM dept_groups where did=#{did})
+        </where>
+
+    </select>
+    <select id="findActionsByGid" parameterType="java.lang.Integer" resultType="Action">
+        select actid,gid,title,url,sflag from action
+        <where>
+            gid=#{gid}
+        </where>
+
+    </select>
+
+    <select id="findAllLevel" resultType="Level">
+        select lid,title,losal,hisal from level
+    </select>
+    <select id="findById" resultType="Emp" parameterType="int">
+        select eid from emp
+        <where>
+            eid=#{eid}
+        </where>
+    </select>
+    <insert  id="doCreate" parameterType="Emp">
+        insert into emp(eid,did,lid,heid,name,password,phone,salary,note,aflag,sex,photo)
+        VALUES (#{eid},#{did},#{lid},#{heid},#{name},#{password},#{phone},#{salary},#{note},#{aflag},#{sex},#{photo})
+    </insert>
+</mapper>

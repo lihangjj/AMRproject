@@ -15,7 +15,7 @@
     <mvc:annotation-driven/>
     <mvc:default-servlet-handler/>
     <bean class="org.springframework.web.servlet.view.InternalResourceViewResolver">
-        <property name="prefix" value="/WEB-INF/pages/"/>
+        <property name="prefix" value="/pages/"/>
         <property name="suffix" value=".jsp"/>
     </bean>
     <bean id="multipartResolver" class="org.springframework.web.multipart.commons.CommonsMultipartResolver">
@@ -27,7 +27,7 @@
         <property name="exceptionMappings">
             <props>
                 <prop key="org.springframework.web.multipart.MaxUploadSizeExceededException">
-                    errors
+                    file_errors
                 </prop>
             </props>
         </property>
@@ -41,11 +41,11 @@
             </array>
         </property>
     </bean>
-	<!--拦截器的配置，需要两个星**-->
-    <!--<mvc:interceptors>-->
-        <!--<mvc:interceptor>-->
-            <!--<mvc:mapping path="/pages/**"/>-->
-            <!--<bean class="lh.util.ValidationInterceptor"/>-->
-        <!--</mvc:interceptor>-->
-    <!--</mvc:interceptors>-->
+    <!--拦截器的配置，需要两个星**-->
+    <mvc:interceptors>
+        <mvc:interceptor>
+            <mvc:mapping path="/pages/**"/>
+            <bean class="lh.util.ValidationInterceptor"/>
+        </mvc:interceptor>
+    </mvc:interceptors>
 </beans>
