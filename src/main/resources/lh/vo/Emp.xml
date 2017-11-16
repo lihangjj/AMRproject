@@ -28,13 +28,56 @@
         select lid,title,losal,hisal from level
     </select>
     <select id="findById" resultType="Emp" parameterType="int">
-        select eid from emp
+        SELECT eid,did,lid,heid,name,password,phone,salary,note,aflag,sex,photo from emp
         <where>
             eid=#{eid}
         </where>
     </select>
-    <insert  id="doCreate" parameterType="Emp">
+    <insert id="doCreate" parameterType="Emp">
         insert into emp(eid,did,lid,heid,name,password,phone,salary,note,aflag,sex,photo)
         VALUES (#{eid},#{did},#{lid},#{heid},#{name},#{password},#{phone},#{salary},#{note},#{aflag},#{sex},#{photo})
     </insert>
+    <select id="findAllAdminSplit" parameterType="java.util.Map" resultType="Emp">
+        SELECT eid,did,lid,heid,name,password,phone,salary,note,aflag,sex,photo from emp
+        WHERE aflag in(1,2)
+        <if test="keyWord!=null">
+            AND ${column} like #{keyWord}
+        </if>
+        limit #{start},#{lineSize}
+    </select>
+    <select id="getAllAdminSplitCount" parameterType="java.util.Map" resultType="int">
+        SELECT count(*) from emp
+        WHERE aflag in(1,2)
+        <if test="keyWord!=null">
+            AND ${column} like #{keyWord}
+        </if>
+    </select>
+    <select id="findDeptBySflag" resultType="Dept">
+         SELECT did,title,sflag from dept WHERE sflag=0
+     </select>
+    <select id="findAllEmpSplit" parameterType="java.util.Map" resultType="Emp">
+        SELECT eid,did,lid,heid,name,password,phone,salary,note,aflag,sex,photo from emp
+        WHERE aflag=0
+        <if test="keyWord!=null">
+            AND ${column} like #{keyWord}
+        </if>
+        limit #{start},#{lineSize}
+    </select>
+    <select id="getAllEmpSplitCount" parameterType="java.util.Map" resultType="int">
+        SELECT count(*) from emp
+        WHERE aflag=0
+        <if test="keyWord!=null">
+            AND ${column} like #{keyWord}
+        </if>
+    </select>
+    <update id="doUpdate" parameterType="Emp">
+        UPDATE emp
+        <set>
+            did=#{did},lid=#{lid},heid=#{heid},name=#{name},
+            <if test="password!=null">
+                password=#{password},
+            </if>
+            phone=#{phone},salary=#{salary},note=#{note},aflag=#{aflag},sex=#{sex},photo=#{photo} where eid=#{eid}
+        </set>
+    </update>
 </mapper>

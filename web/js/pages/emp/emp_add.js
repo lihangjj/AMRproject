@@ -29,22 +29,22 @@ $(function() {
 		rules : {
 			"name" : {
 				required : true,
-				//remote : {
-//									url : "check.jsp", // 后台处理程序
-//									type : "post", // 数据发送方式
-//									dataType : "html", // 接受数据格式
-//									data : { // 要传递的数据
-//										code : function() {
-//											return $("#code").val();
-//										}
-//									},
-//									dataFilter : function(data, type) {
-//										if (data.trim() == "true")
-//											return true;
-//										else
-//											return false;
-//									}
-				//}
+				// remote : {
+				// 					url : "check.jsp", // 后台处理程序
+				// 					type : "post", // 数据发送方式
+				// 					dataType : "html", // 接受数据格式
+				// 					data : { // 要传递的数据
+				// 						code : function() {
+				// 							return $("#code").val();
+				// 						}
+				// 					},
+				// 					dataFilter : function(data, type) {
+				// 						if (data.trim() == "true")
+				// 							return true;
+				// 						else
+				// 							return false;
+				// 					}
+				// }
 			},
 			"eid" : {
 				required : true,
@@ -56,7 +56,7 @@ $(function() {
 					data : { // 要传递的数据
 						eid : function() {
 							return $("#eid").val();
-						} 
+						}
 					},
 					dataFilter : function(data, type) {
 						if (data.trim() == "true")
@@ -78,21 +78,19 @@ $(function() {
 			"phone" : {
 				required : true
 			},
-			"pic" : {
-				required : true
-			},
+
 			"salary" : {
 				required : true ,
 				number : true ,
 				remote : {
-					url : "pages/level/checkSalary.action", // 后台处理程序
+					url : "pages/admin/checkSalary.action", // 后台处理程序
 					type : "post", // 数据发送方式
 					dataType : "html", // 接受数据格式
 					data : { // 要传递的数据
 						salary : function() {
 							return $("#salary").val();
 						} ,
-						lid : function() { 
+						lid : function() {
 							return $("#level\\.lid option:selected").val();
 						}
 					},
@@ -106,4 +104,4 @@ $(function() {
 			}
 		}
 	});
-})
+});

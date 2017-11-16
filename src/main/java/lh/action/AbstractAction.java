@@ -7,21 +7,17 @@ import org.springframework.beans.propertyeditors.CustomDateEditor;
 import org.springframework.context.support.ResourceBundleMessageSource;
 import org.springframework.web.bind.WebDataBinder;
 import org.springframework.web.bind.annotation.InitBinder;
-import org.springframework.web.multipart.MultipartFile;
 import org.springframework.web.servlet.ModelAndView;
 
 import javax.servlet.http.HttpServletRequest;
-import java.io.File;
-import java.io.FileOutputStream;
-import java.io.IOException;
-import java.io.InputStream;
 import java.text.SimpleDateFormat;
 import java.util.Date;
+import java.util.Iterator;
 import java.util.Locale;
-import java.util.UUID;
+import java.util.Set;
 
 public abstract class AbstractAction {
-    protected String title ="";
+    protected String title = "";
     private Logger log = Logger.getLogger(LoginAction.class);
 
     @Autowired
@@ -45,50 +41,21 @@ public abstract class AbstractAction {
         }
     }
 
-    public String createFileName(MultipartFile photo) {
-        if (photo.isEmpty()) {
-            return "nophoto.png";
-        }
-        return UUID.randomUUID() + "." + photo.getContentType().split("/")[1];
-    }
-
-    public boolean deleteFile(String fileName, HttpServletRequest request) {
-        String filePath = request.getSession().getServletContext().getRealPath("/") + setUploadPath() + fileName;
-        File file = new File(filePath);
-        return file.delete();
-    }
-
-    public boolean saveFile(String fileName, MultipartFile photo, HttpServletRequest request) {
-        String filePath = request.getSession().getServletContext().getRealPath("/") + setUploadPath() + fileName;
-        File file = new File(filePath);
-        if (!file.getParentFile().exists()) {
-            file.getParentFile().mkdirs();
-        }
-        FileOutputStream outputStream = null;
+    public boolean verifyPermission(int actid, HttpServletRequest request) {
+        Set<Integer> actids = (Set<Integer>) request.getSession().getAttribute("actids");
+        Iterator<Integer> iterator = null;
         try {
-            outputStream = new FileOutputStream(file);
-            InputStream inputStream = photo.getInputStream();
-            int temp;
-            byte[] bytes = new byte[2048];
-            while ((temp = inputStream.read(bytes)) != -1) {
-                outputStream.write(bytes, 0, temp);
-            }
-            return true;
+            iterator = actids.iterator();
         } catch (Exception e) {
             return false;
-        } finally {
-            if (outputStream != null) {
-                try {
-                    outputStream.close();
-                } catch (IOException e) {
-                    e.printStackTrace();
-                }
-            }
-
         }
+        while (iterator.hasNext()) {
+            Integer actid2 = iterator.next();
+            if (actid2 == actid) {
+                return true;
+            }
+        }
+        return false;
     }
-
-
-    abstract String setUploadPath();
 
 }

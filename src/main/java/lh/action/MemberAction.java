@@ -35,10 +35,7 @@ public class MemberAction extends AbstractAction {
     }
 
 
-    @Override
-    String setUploadPath() {
-        return null;
-    }
+
 
     @InitBinder
     public void initBinder(WebDataBinder binder) {

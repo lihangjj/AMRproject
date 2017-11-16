@@ -11,5 +11,5 @@ public interface IDAO<K, V> {
 	 List<V> findAll() throws Exception;
 	 List<V> findAllSplit(String column, String keyWord,
                                 Integer currentPage, Integer lineSize) throws Exception;
-	 Integer getAllCount(String column, String keyWord) throws Exception;
+	 Integer getAllSplitCount(String column, String keyWord) throws Exception;
 }

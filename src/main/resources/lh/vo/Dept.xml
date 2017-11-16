@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="lh.dao.IDeptDAO">
+    <select id="findAll" resultType="Dept">
+        SELECT did,title,sflag from dept
+    </select>
+    <select id="findActionByDid" resultType="Action">
+        SELECT actid,gid,title,url from action where
+        gid IN(SELECT gid from dept_groups where did=#{did})
+    </select>
+    <update id="doUpdate">
+        UPDATE dept SET title=#{title} where did=#{did}
+    </update>
+</mapper>

@@ -3,6 +3,7 @@ package lh.service.impl;
 import lh.dao.IEmpDAO;
 import lh.dao.ILevelDAO;
 import lh.service.IEmpService;
+import lh.util.password.EncryptUtil;
 import lh.vo.Action;
 import lh.vo.Emp;
 import lh.vo.Groups;
@@ -10,7 +11,9 @@ import lh.vo.Level;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 
 @Service
 public class EmpServiceImpl implements IEmpService {
@@ -18,6 +21,31 @@ public class EmpServiceImpl implements IEmpService {
     private IEmpDAO empDAO;
     @Autowired
     private ILevelDAO levelDAO;
+
+    @Override
+    public Map<String, Object> addPre() throws Exception {
+        Map<String, Object> map = new HashMap<>();
+        map.put("allDept", empDAO.findDeptBySflag());
+        map.put("allLevel", empDAO.findAllLevel());
+        return map;
+    }
+
+    @Override
+    public Map<String, Object> listSplit(String column, String keyWord, int currentPage, int lineSize) throws Exception {
+        Map<String, Object> map = new HashMap<>();
+        Map<String, Object> mapParameter = new HashMap<>();
+        mapParameter.put("keyWord", "%" + keyWord + "%");
+        if (keyWord == null || "".equals(keyWord)) {//如果keyWord为空，手工put null
+            mapParameter.put("keyWord", null);
+        }
+        mapParameter.put("column", column);
+        mapParameter.put("start", (currentPage - 1) * lineSize);
+        mapParameter.put("lineSize", lineSize);
+
+        map.put("allAdmin", empDAO.findAllAdminSplit(mapParameter));
+        map.put("allRecorders", empDAO.getAllAdminSplitCount(mapParameter));
+        return map;
+    }
 
     @Override
     public boolean findLogin(Emp emp) throws Exception {
@@ -49,8 +77,50 @@ public class EmpServiceImpl implements IEmpService {
 
     @Override
     public boolean insert(Emp emp) throws Exception {
-        emp.setAflag(2);//普通管理员
-        return empDAO.doCreate(emp);
+        if (checkSal(emp.getLid(), emp.getSalary())) {//业务层先验证工资
+            emp.setAflag(2);//普通管理员
+            return empDAO.doCreate(emp);
+        }
+        return false;
+
+    }
+
+    @Override
+    public Map<String, Object> listSplitEmp(String column, String keyWord, int currentPage, int lineSize) throws Exception {
+        Map<String, Object> map = new HashMap<>();
+        Map<String, Object> mapParameter = new HashMap<>();
+        mapParameter.put("keyWord", "%" + keyWord + "%");
+        if (keyWord == null || "".equals(keyWord)) {
+            mapParameter.put("keyWord", null);
+        }
+        mapParameter.put("lineSize", lineSize);
+        mapParameter.put("start", (currentPage - 1) * lineSize);
+        mapParameter.put("column", column);
+        map.put("allEmp", empDAO.findAllEmpSplit(mapParameter));
+        map.put("allRecorders", empDAO.getAllEmpSplitCount(mapParameter));
+        return map;
+    }
+
+    @Override
+    public boolean insertEmp(Emp emp) throws Exception {
+        if (checkSal(emp.getLid(), emp.getSalary())) {
+            emp.setAflag(0);
+            return empDAO.doCreate(emp);
+        }
+        return false;
+
+    }
+
+    @Override
+    public boolean update(Emp emp) throws Exception {
+        emp.setAflag(0);
+        if ("".equals(emp.getPassword()) || emp.getPassword() == null) {
+            emp.setPassword(null);
+        } else {
+            emp.setPassword(EncryptUtil.getPwd(emp.getPassword()));
+        }
+        System.out.println(emp);
+        return empDAO.doUpdate(emp);
     }
 
     @Override
@@ -62,9 +132,14 @@ public class EmpServiceImpl implements IEmpService {
     }
 
     @Override
+    public Emp findEmpById(int eid) throws Exception {
+        return empDAO.findById(eid);
+    }
+
+    @Override
     public boolean checkSal(int lid, double sal) throws Exception {
-        Level level=levelDAO.findById(lid);
-        if (level.getLosal()<=sal&&sal<=level.getHisal()){
+        Level level = levelDAO.findById(lid);
+        if (level.getLosal() <= sal && sal <= level.getHisal()) {
             return true;
         }
         return false;

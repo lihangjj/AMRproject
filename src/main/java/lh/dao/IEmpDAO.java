@@ -1,12 +1,10 @@
 package lh.dao;
 
-import lh.vo.Action;
-import lh.vo.Emp;
-import lh.vo.Groups;
-import lh.vo.Level;
+import lh.vo.*;
 import org.springframework.stereotype.Repository;
 
 import java.util.List;
+import java.util.Map;
 
 @Repository
 public interface IEmpDAO extends IDAO<Integer, Emp> {
@@ -14,11 +12,19 @@ public interface IEmpDAO extends IDAO<Integer, Emp> {
 
     List<Groups> findGroupsByEid(Integer did);
 
-    List<Action> findActionsByGid(int gid) throws Exception;
+    List<Action> findActionsByGid(int gid);
 
-    List<Level> findAllLevel() throws Exception;
+    List<Level> findAllLevel();
 
-    boolean doCreate(Emp emp) throws Exception;
+    List<Dept> findDeptBySflag();
 
+    boolean doCreate(Emp emp);
 
+    List<Emp> findAllEmpSplit(Map<String, Object> map);
+
+    List<Emp> findAllAdminSplit(Map<String, Object> map);
+
+    Integer getAllAdminSplitCount(Map<String, Object> map);
+
+    Integer getAllEmpSplitCount(Map<String, Object> map);
 }

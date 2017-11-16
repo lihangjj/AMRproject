@@ -3,7 +3,7 @@ $(function() {
 		$("#salary").removeData("previousValue") ;	// 删除指定元素中的之前的数据
 	}) ; 
 	setVal() ; 
-})
+});
 function setVal() {
 	$("#myform").validate({
 		debug : true, // 取消表单的提交操作

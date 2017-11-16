@@ -28,7 +28,7 @@
 						<div class="box-header">
 							<h3 class="box-title"><strong>管理员列表</strong></h3>
 						</div>
-						<jsp:include page="/pages/plugins/split_page_plugin_search.jsp"/>
+						<jsp:include page="/pages/plugins/search.jsp"/>
 						<!-- /.box-header -->
 						<div class="box-body table-responsive no-padding">
 							<table class="table table-hover">
@@ -39,7 +39,7 @@
 									<th>性别</th>
 									<th>基本工资</th>
 								</tr>
-								<c:forEach items="${allEmps}" var="emp">
+								<c:forEach items="${allAdmin}" var="emp">
 									<tr>
 										<td>${emp.eid}</td>
 										<td>${emp.name}</td>
@@ -51,7 +51,7 @@
 							</table>
 						</div>
 						<!-- /.box-body -->
-						<jsp:include page="/pages/plugins/split_page_plugin_bar.jsp"/>
+						<jsp:include page="/pages/plugins/split_bar.jsp"/>
 					</div>
 					<!-- /.box -->
 				</div>

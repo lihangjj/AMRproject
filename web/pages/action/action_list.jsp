@@ -35,7 +35,7 @@
 									<th>名称</th>
 									<th>访问路径</th>
 								</tr>
-								<c:forEach items="${allActions}" var="act">
+								<c:forEach items="${allAction}" var="act">
 									<tr>
 										<td>${act.title}</td>
 										<td>${act.url}</td>
