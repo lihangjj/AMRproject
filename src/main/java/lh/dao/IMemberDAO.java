@@ -9,6 +9,5 @@ import java.util.Map;
 @Repository
 public interface IMemberDAO {
     boolean doCreate(Member vo) throws Exception;
-
     List<Member> findAllSplit(Map<String, Object> map);
 }

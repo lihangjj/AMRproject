@@ -13,7 +13,13 @@ public class ValidationInterceptor implements HandlerInterceptor {
     public boolean preHandle(HttpServletRequest request, HttpServletResponse response, Object o) throws Exception {
         System.out.println("验证之前拦截");
         //验证，并得到验证错误结果，如果map长度大于0，说明有错，就拦截，长度等于0，就放行
-        Map<String, String> errorsMap = validateUtil.getErrorsMap(request, (HandlerMethod) o);
+        HandlerMethod handlerMethod = null;
+        try {
+            handlerMethod = (HandlerMethod) o;
+        } catch (Exception e) {
+            return true;//如果不能强制换成HandlerMethod,说明不需要拦截，直接放行；
+        }
+        Map<String, String> errorsMap = validateUtil.getErrorsMap(request,  handlerMethod);
         if (errorsMap.size() == 0) {
             return true;//放行
         }

@@ -7,6 +7,7 @@
     <link rel="stylesheet" type="text/css" href="/css/login.css"/>
     <script type="text/javascript" src="../jquery/jquery.backstretch.min.js"></script>
     <script type="text/javascript" src="/js/login.js"></script>
+
 </head>
 <body>
 <div class="top-content">
@@ -23,14 +24,9 @@
                         </div>
                     </div>
                     <div class="form-bottom" style="background: white;">
-                        <div class="h5">程序出错了，请返回<a href="/login.jsp">首页</a>，与管理员联系！</div>
+                        <div class="h5">程序出错了，请返回<a class="text-danger" href="/login.jsp">首页</a>，与管理员联系！</div>
                         <div class="h5">
-                            程序之中出现了如下的错误问题：
-                            <ul>
-                                <c:forEach items="${errors}" var="error">
-                                    <li class="text-danger">文件类型:${error.value}</li>
-                                </c:forEach>
-                            </ul>
+                            <span class="text-danger">上传文件不能超过5M！</span>
                         </div>
                     </div>
                 </div>

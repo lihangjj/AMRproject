@@ -2,30 +2,26 @@ package lh.action;
 
 import lh.service.IEmpService;
 import lh.util.MD5Code;
+import lh.vo.Action;
 import lh.vo.Emp;
 import lh.vo.Groups;
-import org.apache.log4j.Logger;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.beans.propertyeditors.CustomDateEditor;
 import org.springframework.context.annotation.Scope;
 import org.springframework.stereotype.Controller;
-import org.springframework.web.bind.WebDataBinder;
-import org.springframework.web.bind.annotation.InitBinder;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.servlet.ModelAndView;
 
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpSession;
-import java.text.SimpleDateFormat;
-import java.util.Date;
+import java.util.HashSet;
 import java.util.List;
+import java.util.Set;
 
 @Controller
 @Scope(scopeName = "prototype")//取消单例设计模式
 public class LoginAction extends AbstractAction {
     @Autowired
     private IEmpService empService;
-    private Logger log = Logger.getLogger(LoginAction.class);
 
     @RequestMapping("/login")
     public ModelAndView login(Emp emp, HttpServletRequest request) {
@@ -40,6 +36,14 @@ public class LoginAction extends AbstractAction {
                 session.setAttribute("photo", emp.getPhoto());
                 session.setAttribute("aflag", emp.getAflag());
                 List<Groups> groups = empService.findGroupsByDid(emp.getDid());
+                Set<Integer> actids = new HashSet<>();
+                for (Groups x : groups) {
+                    List<Action> actions = x.getActions();
+                    for (Action y : actions) {
+                        actids.add(y.getActid());
+                    }
+                }
+                session.setAttribute("actids", actids);
                 session.setAttribute("groups", groups);
                 setMsgAndUrl("login.success", "login.success.page", modelAndView);
             } else {
@@ -60,15 +64,5 @@ public class LoginAction extends AbstractAction {
         return modelAndView;
     }
 
-    @Override
-    String setUploadPath() {
-        return null;
-    }
-
-    @InitBinder
-    public void initBinder(WebDataBinder binder) {
-        SimpleDateFormat simpleDateFormat = new SimpleDateFormat("yyyy-MM-dd");//这里一般都只穿日期就够了
-        binder.registerCustomEditor(Date.class, new CustomDateEditor(simpleDateFormat, true));
-    }
 
 }

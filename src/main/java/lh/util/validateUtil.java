@@ -87,7 +87,11 @@ public class validateUtil {
                 if (mimeRules == null) {//表示没有设置单独的验证规则，就用公共的验证规则
                     mimeRules = (String) getResourceValue.invoke(object, "mime.rules", null);
                 }
-                errorsMap.put("文件类型不支持，请确定文件类型为以下类型：", mimeRules);
+                errorsMap.put("文件类型不支持!请确定文件类型为以下类型","文件类型不支持!请确定文件类型为以下类型");
+                String[] mime = mimeRules.split("\\|");
+                for (int x = 0; x < mime.length; x++) {
+                    errorsMap.put("类型"+(x+1), mime[x]);
+                }
             }
 
         }

@@ -5,7 +5,7 @@
 	String basePath = request.getScheme() + "://"
 			+ request.getServerName() + ":" + request.getServerPort()
 			+ path + "/";
-	String addUrl = basePath + "pages/admin/add.action" ;
+	String addUrl = basePath + "pages/admin/add" ;
 %>
 
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
@@ -13,7 +13,7 @@
 <head>
 <base href="<%=basePath%>">
 <jsp:include page="/pages/plugins/include_javascript_head.jsp" /> 
-<script type="text/javascript" src="js/pages/admin/admin_add.js"></script>
+<script type="text/javascript" src="/js/pages/admin/admin_add.js"></script>
 </head>
 <body class="hold-transition skin-blue sidebar-mini">
 	<div class="wrapper">
@@ -95,7 +95,7 @@
 										<!-- 定义表单提示文字 -->
 										<label class="col-md-3 control-label" for="level.lid">员工级别：</label>
 										<div class="col-md-5">
-											<select id="level.lid" name="level.lid" class="form-control">
+											<select id="level.lid" name="lid" class="form-control">
 												<c:forEach items="${allLevels}" var="lev">
 													<option value="${lev.lid}">${lev.title}（${lev.losal} ~ ${lev.hisal}）</option>
 												</c:forEach>

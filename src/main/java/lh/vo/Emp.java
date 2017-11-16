@@ -1,7 +1,6 @@
 package lh.vo;
 
 import java.io.Serializable;
-import java.util.Date;
 
 public class Emp implements Serializable{
    private String name,password,phone,sex,photo,note;

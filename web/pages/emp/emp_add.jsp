@@ -13,7 +13,7 @@
 <head>
 <base href="<%=basePath%>">
 <jsp:include page="/pages/plugins/include_javascript_head.jsp" /> 
-<script type="text/javascript" src="js/pages/emp/emp_add.js"></script>
+<script type="text/javascript" src="/js/pages/emp/emp_add.js"></script>
 </head>
 <body class="hold-transition skin-blue sidebar-mini">
 	<div class="wrapper">
@@ -73,14 +73,14 @@
 										<!-- 定义表单提示文字 -->
 										<label class="col-md-3 control-label" for="dept.did">所属部门：</label>
 										<div class="col-md-5">
-											<select id="dept.did" name="dept.did" class="form-control">
-												<c:forEach items="${allDepts}" var="dept">
+											<select id="dept.did" name="did" class="form-control">
+												<c:forEach items="${allDept}" var="dept">
 													<option value="${dept.did}">${dept.title}</option>
 												</c:forEach>
 											</select>
 										</div>
 										<!-- 定义表单错误提示显示元素 -->
-										<div class="col-md-4" id="level.lidMsg"></div>
+										<div class="col-md-4" id="dept.didMsg"></div>
 									</div>
 									<div class="form-group" id="passwordDiv">
 										<!-- 定义表单提示文字 -->
@@ -108,8 +108,8 @@
 										<!-- 定义表单提示文字 -->
 										<label class="col-md-3 control-label" for="level.lid">员工级别：</label>
 										<div class="col-md-5">
-											<select id="level.lid" name="level.lid" class="form-control">
-												<c:forEach items="${allLevels}" var="lev">
+											<select id="level.lid" name="lid" class="form-control">
+												<c:forEach items="${allLevel}" var="lev">
 													<option value="${lev.lid}">${lev.title}（${lev.losal} ~ ${lev.hisal}）</option>
 												</c:forEach>
 											</select>
@@ -130,7 +130,7 @@
 									</div>
 									<div class="form-group" id="photoDiv">
 										<!-- 定义表单提示文字 -->
-										<label class="col-md-3 control-label" for="photo">雇员照片：</label>
+										<label class="col-md-3 control-label" for="pic">雇员照片：</label>
 										<div class="col-md-5">
 											<!-- 定义表单输入组件 -->
 											<input type="file" id="pic" name="pic" class="form-control"

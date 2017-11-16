@@ -12,7 +12,7 @@
 <head>
 <base href="<%=basePath%>">
 <jsp:include page="/pages/plugins/include_javascript_head.jsp" />
-<script type="text/javascript" src="js/pages/dept/dept_list.js"></script>
+<script type="text/javascript" src="/js/pages/dept/dept_list.js"></script>
 </head>
 <body class="hold-transition skin-blue sidebar-mini">
 	<div class="wrapper">
@@ -35,11 +35,11 @@
 									<th width="80%">名称</th>
 									<th colspan="2">操作</th>
 								</tr>
-								<c:forEach items="${allDepts }" var="dept"> 
+								<c:forEach items="${allDept}" var="dept">
 									<tr>
 										<td><input type="text" name="title-${dept.did}" id="title-${dept.did}" value="${dept.title}" class="form-control"></td>
 										<td><button class="btn btn-info" id="editBtn-${dept.did}"><span class="fa fa-pencil-square"></span> 修改</button></td>
-										<td><a class="btn btn-warning" href="pages/groups/list.action?did=${dept.did}">查看权限</a></td>
+										<td><a class="btn btn-warning" href="/pages/groups/list?did=${dept.did}">查看权限</a></td>
 									</tr>
 								</c:forEach>
 							</table>
