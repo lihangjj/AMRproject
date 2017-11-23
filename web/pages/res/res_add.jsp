@@ -13,7 +13,7 @@
 <head>
 <base href="<%=basePath%>">
 <jsp:include page="/pages/plugins/include_javascript_head.jsp" /> 
-<script type="text/javascript" src="js/pages/res/res_add.js"></script>
+<script type="text/javascript" src="/js/pages/res/res_add.js"></script>
 </head>
 <body class="hold-transition skin-blue sidebar-mini">
 	<div class="wrapper">
@@ -48,9 +48,9 @@
 										<!-- 定义表单提示文字 -->
 										<label class="col-md-3 control-label" for="type.tid">用品分类：</label>
 										<div class="col-md-5">
-											<select id="type.tid" name="type.tid" class="form-control">
+											<select id="type.tid" name="tid" class="form-control">
 												<option>======= 选择购买用品分类 =======</option>
-												<c:forEach items="${allTypes}" var="type">
+												<c:forEach items="${allType}" var="type">
 													<option value="${type.tid}">${type.title}</option>
 												</c:forEach>
 											</select>
@@ -62,7 +62,7 @@
 										<!-- 定义表单提示文字 -->
 										<label class="col-md-3 control-label" for="subtype.stid">用品子类：</label>
 										<div class="col-md-5">
-											<select id="subtype.stid" name="subtype.stid" class="form-control">
+											<select id="subtype.stid" name="stid" class="form-control">
 											</select>
 										</div>
 										<!-- 定义表单错误提示显示元素 -->

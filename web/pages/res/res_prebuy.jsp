@@ -12,7 +12,7 @@
 <head>
 <base href="<%=basePath%>">
 <jsp:include page="/pages/plugins/include_javascript_head.jsp" />
-<script type="text/javascript" src="js/pages/res/res_prebuy.js"></script> 
+<script type="text/javascript" src="/js/pages/res/res_prebuy.js"></script>
 </head>
 <body class="hold-transition skin-blue sidebar-mini">
 	<div class="wrapper">

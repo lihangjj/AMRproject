@@ -27,4 +27,7 @@ public interface IEmpDAO extends IDAO<Integer, Emp> {
     Integer getAllAdminSplitCount(Map<String, Object> map);
 
     Integer getAllEmpSplitCount(Map<String, Object> map);
+
+    int findByName(Emp emp);
+
 }

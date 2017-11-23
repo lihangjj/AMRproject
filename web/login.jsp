@@ -36,7 +36,7 @@
 									<div class="col-md-12">
 										<!-- 定义表单输入组件 -->
 										<input type="text" id="eid" name="eid" class="form-control"
-											placeholder="请输入雇员编号..." value="2001">
+											placeholder="请输入雇员编号..." value="5001">
 									</div>
 								</div>
 								<div class="form-group" id="passwordDiv">

@@ -9,4 +9,5 @@ public interface IDeptService {
     List<Dept> list() throws Exception;
     boolean update(Dept dept)throws Exception;
     List<Action> findActionByDid(int did)throws Exception;
+
 }

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="lh.dao.ITypeDAO">
+    <select id="findAll" resultType="Type">
+        SELECT tid,title from type
+    </select>
+
+    <update id="doUpdate" parameterType="Type">
+        UPDATE type set title=#{title} where tid=#{tid}
+    </update>
+
+    <select id="findSubTypeByTid" parameterType="Type" resultType="Subtype">
+        SELECT stid,tid,title from subtype where tid=#{tid}
+    </select>
+    <select id="findSubTypeByStid" parameterType="int" resultType="Subtype">
+        SELECT stid,tid,title from subtype where stid=#{stid}
+    </select>
+    <update id="doUpdateSubtype" parameterType="Subtype">
+        UPDATE subtype set title=#{title} where stid=#{stid}
+    </update>
+    <select id="findById" resultType="Type" parameterType="Integer">
+       SELECT tid,title from type where tid=#{tid}
+    </select>
+
+
+</mapper>

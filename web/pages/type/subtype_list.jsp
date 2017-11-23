@@ -12,7 +12,7 @@
 <head>
 <base href="<%=basePath%>">
 <jsp:include page="/pages/plugins/include_javascript_head.jsp" />
-<script type="text/javascript" src="js/pages/type/subtype_list.js"></script>
+<script type="text/javascript" src="/js/pages/type/subtype_list.js"></script>
 </head>
 <body class="hold-transition skin-blue sidebar-mini">
 	<div class="wrapper">
@@ -35,7 +35,7 @@
 									<th>子栏目名称</th>
 									<th>操作</th>
 								</tr>
-								<c:forEach items="${allSubtypes}" var="subtype">
+								<c:forEach items="${allSubtype}" var="subtype">
 									<tr>
 										<td><input type="text" name="title-${subtype.stid}" id="title-${subtype.stid}" value="${subtype.title}" class="form-control"></td>
 										<td><button class="btn btn-info" id="editBtn-${subtype.stid}"><span class="fa fa-pencil-square"></span> 修改</button></td>

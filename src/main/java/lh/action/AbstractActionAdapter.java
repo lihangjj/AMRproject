@@ -15,8 +15,7 @@ public abstract class AbstractActionAdapter extends AbstractAction {
     protected String column = "";
     protected int currentPage = 1;
     protected int lineSize = 5;
-    protected String columnData;
-    protected String url;
+    protected String columnData;//格式为："申请标题:title|状态:status";
 
 
     public String createFileName(MultipartFile photo) {
@@ -82,12 +81,10 @@ public abstract class AbstractActionAdapter extends AbstractAction {
         request.setAttribute("column",column);
         request.setAttribute("lineSize",lineSize);
         request.setAttribute("columnData", columnData);
-        request.setAttribute("url", url);
-
-        System.out.println(lineSize);
-        System.out.println(currentPage);
+        request.setAttribute("url", setUrl());
     }
 
     abstract String setUploadPath();
+    abstract String setUrl();
 
 }

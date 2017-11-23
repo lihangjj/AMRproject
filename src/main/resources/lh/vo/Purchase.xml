@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="lh.dao.IPurchaseDAO">
+    <insert id="doCreate" parameterType="Purchase" keyProperty="pid" useGeneratedKeys="true">
+        insert into purchase(eid,meid,title,total,status,pubdate,note)VALUES (#{eid},#{meid},#{title},#{total},#{status},#{pubdate},#{note})
+    </insert>
+
+    <select id="listSplit" resultType="Purchase" parameterType="Map">
+        SELECT pid,eid,meid,title,total,status,pubdate,note from purchase
+        <if test="keyWord!=null">
+            <where>
+                ${column} like #{keyWord}
+            </where>
+        </if>
+        limit #{start},#{lineSize}
+    </select>
+    <select id="listSplitCount" resultType="int" parameterType="Map">
+        SELECT count(*) from purchase
+        <if test="keyWord!=null">
+            <where>
+                ${column} like #{keyWord}
+            </where>
+        </if>
+    </select>
+    <select id="findById" parameterType="int" resultType="Purchase">
+        SELECT pid,eid,meid,title,total,status,pubdate,note from purchase
+        <where>
+            pid=#{pid}
+        </where>
+
+
+    </select>
+
+</mapper>

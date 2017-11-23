@@ -13,7 +13,7 @@
 <head>
 <base href="<%=basePath%>">
 <jsp:include page="/pages/plugins/include_javascript_head.jsp" /> 
-<script type="text/javascript" src="js/pages/res/res_edit.js"></script>
+<script type="text/javascript" src="/js/pages/res/res_edit.js"></script>
 </head>
 <body class="hold-transition skin-blue sidebar-mini">
 	<div class="wrapper">
@@ -48,8 +48,8 @@
 										<!-- 定义表单提示文字 -->
 										<label class="col-md-3 control-label" for="type.tid">用品分类：</label>
 										<div class="col-md-5">
-											<select id="type.tid" name="type.tid" class="form-control">
-												<c:forEach items="${allTypes}" var="type">
+											<select id="type.tid" name="tid" class="form-control">
+												<c:forEach items="${allType}" var="type">
 													<option value="${type.tid}" ${details.type.tid==type.tid?"selected":""}>${type.title}</option>
 												</c:forEach>
 											</select>
@@ -61,8 +61,8 @@
 										<!-- 定义表单提示文字 -->
 										<label class="col-md-3 control-label" for="subtype.stid">用品子类：</label>
 										<div class="col-md-5">
-											<select id="subtype.stid" name="subtype.stid" class="form-control">
-												<c:forEach items="${allSubtypes}" var="subtype">
+											<select id="subtype.stid" name="stid" class="form-control">
+												<c:forEach items="${allSubtype}" var="subtype">
 													<option value="${subtype.stid}" ${details.subtype.stid==subtype.stid?"selected":""}>${subtype.title}</option>
 												</c:forEach>
 											</select>
@@ -108,6 +108,8 @@
 									</div>
 									<div class="form-group">
 										<div class="col-md-5 col-md-offset-3">
+											<input type="hidden" name="amount" value="${details.amount}">
+											<input type="hidden" id="oldTitle"  value="${details.title}">
 											<input type="hidden" name="did" value="${details.did}">
 											<input type="hidden" name="photo" value="${details.photo}">
 											<button type="submit" class="btn btn-primary">更新</button>

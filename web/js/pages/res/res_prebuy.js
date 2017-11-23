@@ -7,7 +7,7 @@ $(function() {
 		checkboxSelectAll('did',this.checked) ;
 	}) ;
 	// 实现整体修改操作的功能
-	$(editBtn).on("click",function(){
+	$("#editBtn").on("click",function(){
 		// 定义一个数组，保存所有需要被删除的gid数据
 		var del = "" ;
 		var foot = 0 ;
@@ -37,7 +37,7 @@ $(function() {
 	}) ;
 	$("#rmBtn").on("click",function(){	// 绑定用户锁定操作
 		var del = "" ;
-		$(":checked").each(function() {
+		$(":checked").each(function() {//此处是表单选择
 			if(this.id == "did") {	// 要删除的内容
 				del += this.value + "|" ;
 			}

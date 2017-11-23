@@ -13,7 +13,7 @@
 <head>
 <base href="<%=basePath%>">
 <jsp:include page="/pages/plugins/include_javascript_head.jsp" /> 
-<%--<script type="text/javascript" src="/js/pages/emp/emp_edit.js"></script>--%>
+<script type="text/javascript" src="/js/pages/emp/emp_edit.js"></script>
 </head>
 <body class="hold-transition skin-blue sidebar-mini">
 	<div class="wrapper">
@@ -149,6 +149,7 @@
 									<div class="form-group">
 										<div class="col-md-5 col-md-offset-3">
 											<input type="hidden" name="eid" value="${emp.eid}">
+											<input type="hidden" name="oldName" id="oldName" value="${emp.name}">
 											<input type="hidden" name="photo" value="${emp.photo}">
 											<button type="submit" class="btn btn-primary">更新</button>
 											<button type="reset" class="btn btn-warning">重置</button>

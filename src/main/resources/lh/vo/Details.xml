@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="lh.dao.IDetailsDAO">
+    <insert id="doCreate" parameterType="Details">
+        INSERT into details(stid,tid,eid,title,price,amount,photo,rflag)VALUES(#{stid},#{tid},#{eid},#{title},#{price},#{amount},#{photo},#{rflag})
+    </insert>
+
+    <select id="findAllPrebuy" parameterType="int" resultType="Details">
+        SELECT did,pid,stid,tid,rid,eid,title,price,amount,photo,rflag from details where eid=#{eid} and pid IS NULL
+    </select>
+    <select id="findById" resultType="Details" parameterType="Details">
+        SELECT did,pid,stid,tid,rid,eid,title,price,amount,photo,rflag from details where did=#{did}
+    </select>
+    <select id="findByPid" resultType="Details" parameterType="int">
+        SELECT did,pid,stid,tid,rid,eid,title,price,amount,photo,rflag from details where pid=#{pid}
+    </select>
+    <select id="findByTitle" resultType="int" parameterType="Details">
+        SELECT count(*) from details where title=#{title}
+    </select>
+    <update id="doUpdate" parameterType="Details">
+            UPDATE details set amount=#{amount},photo=#{photo},title=#{title},tid=#{tid},stid=#{stid},price=#{price},rflag=#{rflag} WHERE did=#{did}
+    </update>
+    <update id="updateAmount" parameterType="Details">
+        UPDATE details set amount=#{amount} WHERE did=#{did}
+    </update>
+    <update id="updatePid" parameterType="Details">
+        UPDATE details set pid=#{pid} WHERE pid is NULL AND eid=#{eid}
+    </update>
+    <delete id="deleteDetails" parameterType="int">
+        DELETE FROM details where did IN
+        <foreach collection="array" open="(" close=")" separator="," item="e">
+            #{e}
+        </foreach>
+    </delete>
+
+</mapper>

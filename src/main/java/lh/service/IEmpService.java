@@ -21,6 +21,7 @@ public interface IEmpService {
     boolean update(Emp emp) throws Exception;
 
     boolean findById(int eid) throws Exception;
+    boolean findByName(Emp emp)throws Exception;
 
     Emp findEmpById(int eid) throws Exception;
 

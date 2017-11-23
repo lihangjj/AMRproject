@@ -80,4 +80,7 @@
             phone=#{phone},salary=#{salary},note=#{note},aflag=#{aflag},sex=#{sex},photo=#{photo} where eid=#{eid}
         </set>
     </update>
+    <select id="findByName" resultType="int" parameterType="Emp">
+        SELECT count(*) from emp WHERE name=#{name}
+    </select>
 </mapper>
