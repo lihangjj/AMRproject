@@ -12,7 +12,7 @@
 <head>
 <base href="<%=basePath%>">
 <jsp:include page="/pages/plugins/include_javascript_head.jsp" />
-<script type="text/javascript" src="js/pages/type/type_list.js"></script>
+<script type="text/javascript" src="/js/pages/type/type_list.js"></script>
 </head>
 <body class="hold-transition skin-blue sidebar-mini">
 	<div class="wrapper">
@@ -35,7 +35,7 @@
 									<th>栏目名称</th>
 									<th>操作</th>
 								</tr>
-								<c:forEach items="${allTypes}" var="type">
+								<c:forEach items="${allType}" var="type">
 									<tr>
 										<td><input type="text" name="title-${type.tid}" id="title-${type.tid}" value="${type.title}" class="form-control"></td>
 										<td><button class="btn btn-info" id="editBtn-${type.tid}"><span class="fa fa-pencil-square"></span> 修改</button>

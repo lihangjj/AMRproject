@@ -112,6 +112,15 @@ public class EmpServiceImpl implements IEmpService {
     }
 
     @Override
+    public boolean findByName(Emp emp) throws Exception {
+
+        if (empDAO.findByName(emp) > 0){
+            return false;
+        }
+        return true;
+    }
+
+    @Override
     public boolean update(Emp emp) throws Exception {
         emp.setAflag(0);
         if ("".equals(emp.getPassword()) || emp.getPassword() == null) {
@@ -119,7 +128,6 @@ public class EmpServiceImpl implements IEmpService {
         } else {
             emp.setPassword(EncryptUtil.getPwd(emp.getPassword()));
         }
-        System.out.println(emp);
         return empDAO.doUpdate(emp);
     }
 

@@ -2,7 +2,7 @@ $(function() {
 	$("#type\\.tid").on("change",function(){
 		var tid = $(this).val() ;
 		if (/^\d+$/.test(tid)) {	// 现在有内容选择
-			$.post("pages/type/getSubtype.action",{tid:tid},function(data){
+			$.post("pages/res/getSubtype.action",{tid:tid},function(data){
 				$("#subtype\\.stid option").remove() ;
 				for (var x = 0 ; x < data.length ; x ++) {
 					var stid = data[x].stid ;
@@ -77,4 +77,4 @@ $(function() {
 			}
 		}
 	});
-})
+});

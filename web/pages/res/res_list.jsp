@@ -13,7 +13,7 @@
 <head>
 <base href="<%=basePath%>">
 <jsp:include page="/pages/plugins/include_javascript_head.jsp" />
-<script type="text/javascript" src="js/pages/res/res_list.js"></script>
+<script type="text/javascript" src="/js/pages/res/res_list.js"></script>
 </head>
 <body class="hold-transition skin-blue sidebar-mini">
 	<div class="wrapper">
@@ -29,7 +29,7 @@
 						<div class="box-header">
 							<h3 class="box-title"><strong>办公用品列表</strong></h3>
 						</div>
-						<jsp:include page="/pages/plugins/split_page_plugin_search.jsp"/>
+						<jsp:include page="/pages/plugins/search.jsp"/>
 						<!-- /.box-header -->
 						<div class="box-body table-responsive no-padding">
 							<table class="table table-hover">
@@ -41,7 +41,7 @@
 									<th>是否需要返还</th>
 									<th>操作</th>
 								</tr>
-								<c:forEach items="${allRess}" var="res">
+								<c:forEach items="${allRes}" var="res">
 									<tr>
 										<td><img src="upload/res/${res.photo}" class="img" style="width:30px;"> ${res.title}</td>
 										<td><fmt:formatDate value="${res.indate}"/></td>
@@ -50,7 +50,7 @@
 										<td>${res.rflag == 1? "需要归还" : "不需要归还"}</td>
 										<td>
 											<button id="addBut-${res.rid}" class="btn btn-primary btn-xs">加入领取清单</button>
-											<c:if test="${emp.dept.did == 3}">
+											<c:if test="${isXingzheng}">
 												<button id="appendBut-${res.rid}" class="btn btn-warning btn-xs">追加购入</button>
 											</c:if>
 										</td>
@@ -59,7 +59,7 @@
 							</table>
 						</div>
 						<!-- /.box-body -->
-						<jsp:include page="/pages/plugins/split_page_plugin_bar.jsp"/>
+						<jsp:include page="/pages/plugins/split_bar.jsp"/>
 						<jsp:include page="/pages/plugins/include_alert.jsp"/>
 					</div>
 					<!-- /.box -->

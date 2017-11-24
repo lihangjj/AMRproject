@@ -7,10 +7,57 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="33eb189f-423e-4819-bc3a-e4c78615e30b" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../AMRproject/src/main/java/lh/action/DetailsAction.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../AMRproject/src/main/java/lh/action/PurchaseAction.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../AMRproject/src/main/java/lh/action/TypeAction.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../AMRproject/src/main/java/lh/dao/IDetailsDAO.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../AMRproject/src/main/java/lh/dao/IPurchaseDAO.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../AMRproject/src/main/java/lh/dao/ITypeDAO.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../AMRproject/src/main/java/lh/service/IDetailsService.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../AMRproject/src/main/java/lh/service/IPurchaseService.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../AMRproject/src/main/java/lh/service/ITypeService.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../AMRproject/src/main/java/lh/service/impl/DetailsServiceImpl.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../AMRproject/src/main/java/lh/service/impl/PurchaseServiceImpl.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../AMRproject/src/main/java/lh/service/impl/TypeServiceImpl.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../AMRproject/src/main/java/lh/util/MathUtil.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../AMRproject/src/main/java/lh/vo/Details.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../AMRproject/src/main/java/lh/vo/Purchase.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../AMRproject/src/main/java/lh/vo/Res.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../AMRproject/src/main/java/lh/vo/Subtype.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../AMRproject/src/main/java/lh/vo/Type.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../AMRproject/src/main/resources/lh/vo/Details.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../AMRproject/src/main/resources/lh/vo/Purchase.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../AMRproject/src/main/resources/lh/vo/Type.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../AMRproject/.idea/workspace.xml" afterPath="$PROJECT_DIR$/../AMRproject/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../AMRproject/src/main/java/lh/action/AbstractActionAdapter.java" afterPath="$PROJECT_DIR$/../AMRproject/src/main/java/lh/action/AbstractActionAdapter.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../AMRproject/src/main/java/lh/action/AdminAction.java" afterPath="$PROJECT_DIR$/../AMRproject/src/main/java/lh/action/AdminAction.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../AMRproject/src/main/java/lh/action/CheckCode.java" afterPath="$PROJECT_DIR$/../AMRproject/src/main/java/lh/action/CheckCode.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../AMRproject/src/main/java/lh/action/EmpAction.java" afterPath="$PROJECT_DIR$/../AMRproject/src/main/java/lh/action/EmpAction.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../AMRproject/src/main/java/lh/action/MemberAction.java" afterPath="$PROJECT_DIR$/../AMRproject/src/main/java/lh/action/MemberAction.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../AMRproject/src/main/java/lh/dao/IEmpDAO.java" afterPath="$PROJECT_DIR$/../AMRproject/src/main/java/lh/dao/IEmpDAO.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../AMRproject/src/main/java/lh/service/IDeptService.java" afterPath="$PROJECT_DIR$/../AMRproject/src/main/java/lh/service/IDeptService.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../AMRproject/src/main/java/lh/service/IEmpService.java" afterPath="$PROJECT_DIR$/../AMRproject/src/main/java/lh/service/IEmpService.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../AMRproject/src/main/java/lh/service/impl/EmpServiceImpl.java" afterPath="$PROJECT_DIR$/../AMRproject/src/main/java/lh/service/impl/EmpServiceImpl.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../AMRproject/src/main/resources/Pages.properties" afterPath="$PROJECT_DIR$/../AMRproject/src/main/resources/Pages.properties" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../AMRproject/src/main/resources/lh/vo/Emp.xml" afterPath="$PROJECT_DIR$/../AMRproject/src/main/resources/lh/vo/Emp.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../AMRproject/web/js/pages/emp/emp_edit.js" afterPath="$PROJECT_DIR$/../AMRproject/web/js/pages/emp/emp_edit.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../AMRproject/web/js/pages/res/res_add.js" afterPath="$PROJECT_DIR$/../AMRproject/web/js/pages/res/res_add.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../AMRproject/web/js/pages/res/res_edit.js" afterPath="$PROJECT_DIR$/../AMRproject/web/js/pages/res/res_edit.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../AMRproject/web/js/pages/res/res_prebuy.js" afterPath="$PROJECT_DIR$/../AMRproject/web/js/pages/res/res_prebuy.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../AMRproject/web/js/pages/type/type_list.js" afterPath="$PROJECT_DIR$/../AMRproject/web/js/pages/type/type_list.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../AMRproject/web/login.jsp" afterPath="$PROJECT_DIR$/../AMRproject/web/login.jsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../AMRproject/web/pages/emp/emp_edit.jsp" afterPath="$PROJECT_DIR$/../AMRproject/web/pages/emp/emp_edit.jsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../AMRproject/web/pages/purchase/purchase_list.jsp" afterPath="$PROJECT_DIR$/../AMRproject/web/pages/purchase/purchase_list.jsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../AMRproject/web/pages/res/res_add.jsp" afterPath="$PROJECT_DIR$/../AMRproject/web/pages/res/res_add.jsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../AMRproject/web/pages/res/res_edit.jsp" afterPath="$PROJECT_DIR$/../AMRproject/web/pages/res/res_edit.jsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../AMRproject/web/pages/res/res_emp_list.jsp" afterPath="$PROJECT_DIR$/../AMRproject/web/pages/res/res_emp_list.jsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../AMRproject/web/pages/res/res_list.jsp" afterPath="$PROJECT_DIR$/../AMRproject/web/pages/res/res_list.jsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../AMRproject/web/pages/res/res_prebuy.jsp" afterPath="$PROJECT_DIR$/../AMRproject/web/pages/res/res_prebuy.jsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../AMRproject/web/pages/type/subtype_list.jsp" afterPath="$PROJECT_DIR$/../AMRproject/web/pages/type/subtype_list.jsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../AMRproject/web/pages/type/type_list.jsp" afterPath="$PROJECT_DIR$/../AMRproject/web/pages/type/type_list.jsp" />
     </list>
-    <ignored path="$PROJECT_DIR$/out/" />
-    <ignored path="$PROJECT_DIR$/target/" />
+    <ignored path="$PROJECT_DIR$/../AMRproject/out/" />
+    <ignored path="$PROJECT_DIR$/../AMRproject/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -22,7 +69,6 @@
     <option name="optimizeImportsOnTheFly" value="true" />
   </component>
   <component name="CoverageDataManager">
-    <SUITE FILE_PATH="coverage/AMRproject$login_jsp__2_.coverage" NAME="login.jsp (2) Coverage Results" MODIFIED="1510291743413" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
     <SUITE FILE_PATH="coverage/AMRproject$login_jsp.coverage" NAME="login.jsp Coverage Results" MODIFIED="1510153826783" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
   </component>
   <component name="DatabaseView">
@@ -38,105 +84,133 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="EmpAction.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/lh/action/EmpAction.java">
+      <file leaf-file-name="IDetailsDAO.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/../AMRproject/src/main/java/lh/dao/IDetailsDAO.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1920">
-              <caret line="54" column="18" lean-forward="false" selection-start-line="54" selection-start-column="17" selection-end-line="54" selection-end-column="18" />
+            <state relative-caret-position="320">
+              <caret line="19" column="17" lean-forward="false" selection-start-line="19" selection-start-column="17" selection-end-line="19" selection-end-column="17" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="method#addPre#0;class#EmpAction#0" expanded="false" />
-                <element signature="method#editPre#0;class#EmpAction#0" expanded="false" />
-                <element signature="e#5046#5047#0" expanded="true" />
-                <element signature="e#5083#5084#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="purchase_list.jsp" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/../AMRproject/web/pages/purchase/purchase_list.jsp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="278">
+              <caret line="44" column="80" lean-forward="false" selection-start-line="44" selection-start-column="69" selection-end-line="44" selection-end-column="80" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="PurchaseAction.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/../AMRproject/src/main/java/lh/action/PurchaseAction.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="924">
+              <caret line="70" column="0" lean-forward="true" selection-start-line="70" selection-start-column="0" selection-end-line="70" selection-end-column="0" />
+              <folding />
             </state>
           </provider>
         </entry>
       </file>
       <file leaf-file-name="login.jsp" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/web/login.jsp">
+        <entry file="file://$PROJECT_DIR$/../AMRproject/web/login.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1824">
-              <caret line="38" column="80" lean-forward="false" selection-start-line="38" selection-start-column="80" selection-end-line="38" selection-end-column="80" />
+            <state relative-caret-position="425">
+              <caret line="38" column="77" lean-forward="false" selection-start-line="38" selection-start-column="77" selection-end-line="38" selection-end-column="77" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="forward.jsp" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/web/pages/forward.jsp">
+      <file leaf-file-name="IPurchaseService.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/../AMRproject/src/main/java/lh/service/IPurchaseService.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2016">
-              <caret line="42" column="0" lean-forward="false" selection-start-line="42" selection-start-column="0" selection-end-line="42" selection-end-column="0" />
+            <state relative-caret-position="189">
+              <caret line="11" column="17" lean-forward="true" selection-start-line="11" selection-start-column="17" selection-end-line="11" selection-end-column="17" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="IEmpService.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/lh/service/IEmpService.java">
+      <file leaf-file-name="Details.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/../AMRproject/src/main/resources/lh/vo/Details.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1008">
-              <caret line="26" column="12" lean-forward="false" selection-start-line="26" selection-start-column="12" selection-end-line="26" selection-end-column="12" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="emp_add.jsp" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/web/pages/emp/emp_add.jsp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="720">
-              <caret line="15" column="57" lean-forward="false" selection-start-line="15" selection-start-column="57" selection-end-line="15" selection-end-column="57" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="emp_add.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/web/js/pages/emp/emp_add.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="3840">
-              <caret line="80" column="0" lean-forward="false" selection-start-line="80" selection-start-column="0" selection-end-line="80" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="AdminAction.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/lh/action/AdminAction.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1488">
-              <caret line="58" column="36" lean-forward="false" selection-start-line="58" selection-start-column="36" selection-end-line="58" selection-end-column="36" />
+            <state relative-caret-position="63">
+              <caret line="3" column="31" lean-forward="false" selection-start-line="3" selection-start-column="31" selection-end-line="3" selection-end-column="31" />
               <folding>
-                <element signature="method#addPre#0;class#AdminAction#0" expanded="false" />
-                <element signature="method#add#0;class#AdminAction#0" expanded="false" />
+                <marker date="1511450659511" expanded="true" signature="254:393" ph="INSERT into details... " />
+                <marker date="1511450659511" expanded="true" signature="260:273" ph="SELECT tid,t... type" />
+                <marker date="1511450659511" expanded="true" signature="490:598" ph="SELECT did,p... details" />
+                <marker date="1511450659511" expanded="true" signature="693:785" ph="SELECT did,p... details" />
+                <marker date="1511450659511" expanded="true" signature="877:969" ph="SELECT did,p... details" />
+                <marker date="1511450659511" expanded="true" signature="1063:1112" ph="SELECT count... details" />
+                <marker date="1511450659511" expanded="true" signature="1190:1326" ph="UPDATE detai... " />
+                <marker date="1511450659511" expanded="true" signature="1404:1456" ph="UPDATE detai... " />
+                <marker date="1511450659511" expanded="true" signature="1531:1593" ph="UPDATE detai... " />
+                <marker date="1511450659511" expanded="true" signature="1668:1700" ph="DELETE FROM " />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Pages.properties" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/resources/Pages.properties">
+      <file leaf-file-name="PurchaseServiceImpl.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/../AMRproject/src/main/java/lh/service/impl/PurchaseServiceImpl.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="528">
-              <caret line="11" column="15" lean-forward="false" selection-start-line="11" selection-start-column="15" selection-end-line="11" selection-end-column="15" />
+            <state relative-caret-position="131">
+              <caret line="62" column="0" lean-forward="true" selection-start-line="62" selection-start-column="0" selection-end-line="62" selection-end-column="0" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Emp.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/../AMRproject/src/main/resources/lh/vo/Emp.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="33" lean-forward="false" selection-start-line="0" selection-start-column="32" selection-end-line="0" selection-end-column="33" />
+              <folding>
+                <marker date="1510811770157" expanded="true" signature="926:965" ph="select lid,t... level" />
+                <marker date="1510811770157" expanded="true" signature="1258:1457" ph="insert into emp... " />
+                <marker date="1510811770157" expanded="true" signature="1563:1796" ph="SELECT eid,d... emp" />
+                <marker date="1510811770157" expanded="true" signature="2124:2170" ph="SELECT did,t... dept" />
+                <marker date="1510811770157" expanded="true" signature="2275:2502" ph="SELECT eid,d... emp" />
+                <marker date="1510811770157" expanded="true" signature="3215:3258" ph="SELECT count... emp" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="purchase_show.jsp" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/../AMRproject/web/pages/purchase/purchase_show.jsp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="714">
+              <caret line="40" column="58" lean-forward="false" selection-start-line="40" selection-start-column="58" selection-end-line="40" selection-end-column="58" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="EmpServiceImpl.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/lh/service/impl/EmpServiceImpl.java">
+      <file leaf-file-name="Purchase.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/../AMRproject/src/main/java/lh/vo/Purchase.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="555">
-              <caret line="109" column="21" lean-forward="false" selection-start-line="109" selection-start-column="21" selection-end-line="109" selection-end-column="21" />
+            <state relative-caret-position="-16">
+              <caret line="12" column="25" lean-forward="true" selection-start-line="12" selection-start-column="25" selection-end-line="12" selection-end-column="25" />
               <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="method#listSplit#0;class#EmpServiceImpl#0" expanded="false" />
-                <element signature="method#findGroupsByDid#0;class#EmpServiceImpl#0" expanded="false" />
-                <element signature="method#listSplitEmp#0;class#EmpServiceImpl#0" expanded="false" />
+                <element signature="e#320#321#0" expanded="true" />
+                <element signature="e#355#356#0" expanded="true" />
+                <element signature="e#385#386#0" expanded="true" />
+                <element signature="e#429#430#0" expanded="true" />
+                <element signature="e#462#463#0" expanded="true" />
+                <element signature="e#521#522#0" expanded="true" />
+                <element signature="e#565#566#0" expanded="true" />
+                <element signature="e#722#723#0" expanded="true" />
+                <element signature="e#748#749#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -154,17 +228,20 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>findb</find>
-      <find>log</find>
-      <find>find</find>
-      <find>inse</find>
-      <find>dou</find>
-      <find>add</find>
-      <find>che</find>
+      <find>system</find>
+      <find>getsu</find>
+      <find>get</find>
+      <find>findAllPrebuy</find>
+      <find>columnData</find>
+      <find>doUpdate</find>
+      <find>updateAmount</find>
+      <find>updatePid</find>
+      <find>edit</find>
+      <find>findById</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../AMRproject" />
   </component>
   <component name="GradleLocalSettings">
     <option name="externalProjectsViewState">
@@ -174,57 +251,57 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/web/js/pages/admin/admin_add.js" />
-        <option value="$PROJECT_DIR$/src/main/java/lh/dao/ILevelDAO.java" />
-        <option value="$PROJECT_DIR$/src/main/resources/lh/vo/Level.xml" />
-        <option value="$PROJECT_DIR$/src/main/java/lh/util/password/EncryptUtil.java" />
-        <option value="$PROJECT_DIR$/src/main/resources/applicationContext-MVC.xml" />
-        <option value="$PROJECT_DIR$/web/pages/file_errors.jsp" />
-        <option value="$PROJECT_DIR$/web/pages/errors.jsp" />
-        <option value="$PROJECT_DIR$/src/main/java/lh/util/validateUtil.java" />
-        <option value="$PROJECT_DIR$/web/pages/admin/admin_add.jsp" />
-        <option value="$PROJECT_DIR$/web/pages/plugins/include_menu_item.jsp" />
-        <option value="$PROJECT_DIR$/src/main/java/lh/action/LoginAction.java" />
-        <option value="$PROJECT_DIR$/src/main/java/lh/action/MemberAction.java" />
-        <option value="$PROJECT_DIR$/src/main/resources/Messages.properties" />
-        <option value="$PROJECT_DIR$/src/main/java/lh/vo/Emp.java" />
-        <option value="$PROJECT_DIR$/src/main/java/lh/dao/IDAO.java" />
-        <option value="$MAVEN_REPOSITORY$/org/springframework/spring-webmvc/4.3.12.RELEASE/spring-webmvc-4.3.12.RELEASE.jar!/org/springframework/web/servlet/DispatcherServlet.class" />
-        <option value="$MAVEN_REPOSITORY$/org/springframework/spring-webmvc/4.3.12.RELEASE/spring-webmvc-4.3.12.RELEASE.jar!/org/springframework/web/servlet/resource/DefaultServletHttpRequestHandler.class" />
-        <option value="$PROJECT_DIR$/src/main/java/lh/util/ValidationInterceptor.java" />
-        <option value="$MAVEN_REPOSITORY$/org/springframework/spring-webmvc/4.3.12.RELEASE/spring-webmvc-4.3.12.RELEASE.jar!/org/springframework/web/servlet/HandlerExecutionChain.class" />
-        <option value="$MAVEN_REPOSITORY$/org/springframework/spring-tx/4.3.12.RELEASE/spring-tx-4.3.12.RELEASE.jar!/org/springframework/transaction/interceptor/TransactionInterceptor.class" />
-        <option value="$PROJECT_DIR$/web/pages/admin/admin_list.jsp" />
+        <option value="$PROJECT_DIR$/../AMRproject/src/main/java/lh/dao/IEmpDAO.java" />
+        <option value="$PROJECT_DIR$/../AMRproject/src/main/resources/lh/vo/Emp.xml" />
+        <option value="$PROJECT_DIR$/../AMRproject/src/main/java/lh/service/IEmpService.java" />
+        <option value="$PROJECT_DIR$/../AMRproject/web/pages/emp/emp_edit.jsp" />
+        <option value="$PROJECT_DIR$/../AMRproject/web/js/pages/emp/emp_edit.js" />
+        <option value="$PROJECT_DIR$/../AMRproject/src/main/java/lh/service/impl/EmpServiceImpl.java" />
+        <option value="$PROJECT_DIR$/../AMRproject/src/main/java/lh/vo/Type.java" />
+        <option value="$PROJECT_DIR$/../AMRproject/web/pages/type/type_list.jsp" />
+        <option value="$PROJECT_DIR$/../AMRproject/web/js/pages/type/type_list.js" />
+        <option value="$PROJECT_DIR$/../AMRproject/src/main/java/lh/vo/Subtype.java" />
+        <option value="$PROJECT_DIR$/../AMRproject/web/pages/type/subtype_list.jsp" />
+        <option value="$PROJECT_DIR$/../AMRproject/src/main/java/lh/service/ITypeService.java" />
+        <option value="$PROJECT_DIR$/../AMRproject/src/main/java/lh/service/impl/TypeServiceImpl.java" />
+        <option value="$PROJECT_DIR$/../AMRproject/src/main/java/lh/action/TypeAction.java" />
+        <option value="$PROJECT_DIR$/../AMRproject/web/js/pages/res/res_add.js" />
+        <option value="$PROJECT_DIR$/../AMRproject/src/main/java/lh/service/IDeptService.java" />
+        <option value="$PROJECT_DIR$/../AMRproject/src/main/java/lh/dao/IDtails.java" />
+        <option value="$PROJECT_DIR$/../AMRproject/src/main/java/lh/dao/IDetails.java" />
+        <option value="$PROJECT_DIR$/../AMRproject/web/pages/res/res_add.jsp" />
+        <option value="$PROJECT_DIR$/../AMRproject/src/main/java/lh/vo/Res.java" />
+        <option value="$PROJECT_DIR$/../AMRproject/src/main/java/lh/dao/ITypeDAO.java" />
+        <option value="$PROJECT_DIR$/../AMRproject/src/main/resources/lh/vo/Type.xml" />
         <option value="$MAVEN_REPOSITORY$/org/springframework/spring-tx/4.3.12.RELEASE/spring-tx-4.3.12.RELEASE.jar!/org/springframework/transaction/interceptor/TransactionAspectSupport.class" />
-        <option value="$PROJECT_DIR$/src/main/java/lh/action/AdminAction.java" />
-        <option value="$PROJECT_DIR$/web/pages/plugins/search.jsp" />
-        <option value="$PROJECT_DIR$/web/pages/plugins/split_bar.jsp" />
-        <option value="$PROJECT_DIR$/src/main/java/lh/service/IDeptServiceImpl.java" />
-        <option value="$PROJECT_DIR$/src/main/java/lh/action/AbstractAction.java" />
-        <option value="$PROJECT_DIR$/web/pages/plugins/include_javascript_head.jsp" />
-        <option value="$PROJECT_DIR$/web/js/pages/dept/dept_list.js" />
-        <option value="$PROJECT_DIR$/web/pages/action/action_list.jsp" />
-        <option value="$PROJECT_DIR$/web/pages/dept/dept_list.jsp" />
-        <option value="$PROJECT_DIR$/src/main/java/lh/service/IDeptService.java" />
-        <option value="$PROJECT_DIR$/src/main/java/lh/dao/IDeptDAO.java" />
-        <option value="$PROJECT_DIR$/src/main/java/lh/service/impl/DeptServiceImpl.java" />
-        <option value="$PROJECT_DIR$/src/main/java/lh/action/DeptAction.java" />
-        <option value="$PROJECT_DIR$/src/main/resources/lh/vo/Dept.xml" />
-        <option value="$PROJECT_DIR$/web/pages/emp/emp_add.jsp" />
-        <option value="$PROJECT_DIR$/src/main/java/lh/action/AbstractActionAdapter.java" />
-        <option value="$PROJECT_DIR$/web/pages/emp/emp_list.jsp" />
-        <option value="$PROJECT_DIR$/web/js/pages/emp/emp_edit.js" />
-        <option value="$PROJECT_DIR$/web/pages/emp/emp_edit.jsp" />
-        <option value="$PROJECT_DIR$/src/main/java/lh/service/IEmpService.java" />
-        <option value="$PROJECT_DIR$/src/main/java/lh/dao/IEmpDAO.java" />
-        <option value="$MAVEN_REPOSITORY$/org/springframework/spring-aop/4.3.12.RELEASE/spring-aop-4.3.12.RELEASE.jar!/org/springframework/aop/interceptor/ExposeInvocationInterceptor.class" />
+        <option value="$PROJECT_DIR$/../AMRproject/src/main/java/lh/vo/Details.java" />
+        <option value="$PROJECT_DIR$/../AMRproject/web/pages/res/res_edit.jsp" />
+        <option value="$PROJECT_DIR$/../AMRproject/web/js/pages/res/res_edit.js" />
+        <option value="$PROJECT_DIR$/../AMRproject/web/pages/res/res_prebuy.jsp" />
+        <option value="$PROJECT_DIR$/../AMRproject/src/main/java/lh/service/IDetailsService.java" />
+        <option value="$PROJECT_DIR$/../AMRproject/web/js/pages/res/res_prebuy.js" />
+        <option value="$PROJECT_DIR$/../AMRproject/src/main/java/lh/dao/IPurchase.java" />
+        <option value="$PROJECT_DIR$/../AMRproject/src/main/java/lh/service/impl/DetailsServiceImpl.java" />
+        <option value="$PROJECT_DIR$/../AMRproject/src/main/java/lh/util/MathUtil.java" />
+        <option value="$MAVEN_REPOSITORY$/org/springframework/spring-beans/4.3.12.RELEASE/spring-beans-4.3.12.RELEASE.jar!/org/springframework/beans/factory/annotation/AutowiredAnnotationBeanPostProcessor.class" />
         <option value="$MAVEN_REPOSITORY$/org/springframework/spring-aop/4.3.12.RELEASE/spring-aop-4.3.12.RELEASE.jar!/org/springframework/aop/support/AopUtils.class" />
-        <option value="$PROJECT_DIR$/src/main/resources/lh/vo/Emp.xml" />
-        <option value="$PROJECT_DIR$/src/main/resources/Pages.properties" />
-        <option value="$PROJECT_DIR$/web/login.jsp" />
-        <option value="$PROJECT_DIR$/web/js/pages/emp/emp_add.js" />
-        <option value="$PROJECT_DIR$/src/main/java/lh/action/EmpAction.java" />
-        <option value="$PROJECT_DIR$/src/main/java/lh/service/impl/EmpServiceImpl.java" />
+        <option value="$PROJECT_DIR$/../AMRproject/src/main/java/lh/dao/IPurchaseDAO.java" />
+        <option value="$PROJECT_DIR$/../AMRproject/src/main/resources/Pages.properties" />
+        <option value="$PROJECT_DIR$/../AMRproject/src/main/java/lh/action/EmpAction.java" />
+        <option value="$PROJECT_DIR$/../AMRproject/src/main/java/lh/action/DetailsAction.java" />
+        <option value="$PROJECT_DIR$/../AMRproject/src/main/java/lh/action/AdminAction.java" />
+        <option value="$PROJECT_DIR$/../AMRproject/src/main/java/lh/action/AbstractActionAdapter.java" />
+        <option value="$PROJECT_DIR$/../AMRproject/web/pages/res/res_emp_list.jsp" />
+        <option value="$PROJECT_DIR$/../AMRproject/web/pages/res/res_list.jsp" />
+        <option value="$PROJECT_DIR$/../AMRproject/web/pages/purchase/purchase_list.jsp" />
+        <option value="$PROJECT_DIR$/../AMRproject/src/main/java/lh/service/IPurchaseService.java" />
+        <option value="$PROJECT_DIR$/../AMRproject/src/main/resources/lh/vo/Purchase.xml" />
+        <option value="$PROJECT_DIR$/../AMRproject/src/main/java/lh/vo/Purchase.java" />
+        <option value="$PROJECT_DIR$/../AMRproject/src/main/resources/lh/vo/Details.xml" />
+        <option value="$PROJECT_DIR$/../AMRproject/src/main/java/lh/service/impl/PurchaseServiceImpl.java" />
+        <option value="$PROJECT_DIR$/../AMRproject/src/main/java/lh/dao/IDetailsDAO.java" />
+        <option value="$PROJECT_DIR$/../AMRproject/web/login.jsp" />
+        <option value="$PROJECT_DIR$/../AMRproject/src/main/java/lh/action/PurchaseAction.java" />
       </list>
     </option>
   </component>
@@ -249,8 +326,8 @@
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="581" />
-    <option name="y" value="181" />
+    <option name="x" value="386" />
+    <option name="y" value="58" />
     <option name="width" value="3274" />
     <option name="height" value="1844" />
   </component>
@@ -301,7 +378,10 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scratches" />
+      <pane id="PackagesPane" />
       <pane id="AndroidView" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -343,6 +423,15 @@
               <item name="AMRproject_war_exploded" type="462c0819:PsiDirectoryNode" />
               <item name="upload" type="462c0819:PsiDirectoryNode" />
               <item name="emp" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="AMRproject" type="b2602c69:ProjectViewProjectNode" />
+              <item name="AMRproject" type="462c0819:PsiDirectoryNode" />
+              <item name="out" type="462c0819:PsiDirectoryNode" />
+              <item name="artifacts" type="462c0819:PsiDirectoryNode" />
+              <item name="AMRproject_war_exploded" type="462c0819:PsiDirectoryNode" />
+              <item name="upload" type="462c0819:PsiDirectoryNode" />
+              <item name="res" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="AMRproject" type="b2602c69:ProjectViewProjectNode" />
@@ -423,8 +512,7 @@
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="lh" type="462c0819:PsiDirectoryNode" />
-              <item name="util" type="462c0819:PsiDirectoryNode" />
-              <item name="password" type="462c0819:PsiDirectoryNode" />
+              <item name="vo" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="AMRproject" type="b2602c69:ProjectViewProjectNode" />
@@ -457,7 +545,28 @@
               <item name="AMRproject" type="462c0819:PsiDirectoryNode" />
               <item name="web" type="462c0819:PsiDirectoryNode" />
               <item name="pages" type="462c0819:PsiDirectoryNode" />
+              <item name="action" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="AMRproject" type="b2602c69:ProjectViewProjectNode" />
+              <item name="AMRproject" type="462c0819:PsiDirectoryNode" />
+              <item name="web" type="462c0819:PsiDirectoryNode" />
+              <item name="pages" type="462c0819:PsiDirectoryNode" />
               <item name="emp" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="AMRproject" type="b2602c69:ProjectViewProjectNode" />
+              <item name="AMRproject" type="462c0819:PsiDirectoryNode" />
+              <item name="web" type="462c0819:PsiDirectoryNode" />
+              <item name="pages" type="462c0819:PsiDirectoryNode" />
+              <item name="purchase" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="AMRproject" type="b2602c69:ProjectViewProjectNode" />
+              <item name="AMRproject" type="462c0819:PsiDirectoryNode" />
+              <item name="web" type="462c0819:PsiDirectoryNode" />
+              <item name="pages" type="462c0819:PsiDirectoryNode" />
+              <item name="res" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="AMRproject" type="b2602c69:ProjectViewProjectNode" />
@@ -469,30 +578,40 @@
               <item name="AMRproject" type="b2602c69:ProjectViewProjectNode" />
               <item name="AMRproject" type="462c0819:PsiDirectoryNode" />
               <item name="web" type="462c0819:PsiDirectoryNode" />
+              <item name="upload" type="462c0819:PsiDirectoryNode" />
+              <item name="emp" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="AMRproject" type="b2602c69:ProjectViewProjectNode" />
+              <item name="AMRproject" type="462c0819:PsiDirectoryNode" />
+              <item name="web" type="462c0819:PsiDirectoryNode" />
+              <item name="upload" type="462c0819:PsiDirectoryNode" />
+              <item name="res" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="AMRproject" type="b2602c69:ProjectViewProjectNode" />
+              <item name="AMRproject" type="462c0819:PsiDirectoryNode" />
+              <item name="web" type="462c0819:PsiDirectoryNode" />
               <item name="WEB-INF" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scratches" />
-      <pane id="Scope" />
-      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="settings.editor.selected.configurable" value="editing.templates" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.last.edited" value="Artifacts" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.42694497" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../AMRproject" />
   </component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
       <recent name="lh.service.impl" />
-      <recent name="lh.service" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="lh.action" />
@@ -500,11 +619,11 @@
       <recent name="lh.dao" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="J:\AMRproject\src\main\resources\lh\vo" />
-      <recent name="J:\AMRproject\out\artifacts\AMRproject_war_exploded\upload\emp" />
-      <recent name="J:\AMRproject\web\pages\plugins" />
-      <recent name="J:\AMRproject\out\artifacts\AMRproject_war_exploded\upload" />
+      <recent name="P:\AMRproject\src\main\resources\lh\vo" />
+      <recent name="P:\AMRproject\out\artifacts\AMRproject_war_exploded\upload\res" />
       <recent name="P:\AMRproject\out\artifacts\AMRproject_war_exploded\upload\emp" />
+      <recent name="P:\AMRproject\web\pages" />
+      <recent name="P:\AMRproject\src\main\java\lh" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -519,7 +638,26 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Tomcat Server.login.jsp (2)">
+  <component name="RunManager" selected="Tomcat Server.login.jsp (1)">
+    <configuration name="MathUtil" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="lh.util.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="MAIN_CLASS_NAME" value="lh.util.MathUtil" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/../AMRproject" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="ENABLE_SWING_INSPECTOR" value="false" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="AMRproject" />
+      <envs />
+    </configuration>
     <configuration default="true" type="Applet" factoryName="Applet">
       <option name="HTML_USED" value="false" />
       <option name="WIDTH" value="400" />
@@ -532,7 +670,7 @@
       <option name="MAIN_CLASS_NAME" />
       <option name="VM_PARAMETERS" />
       <option name="PROGRAM_PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/../AMRproject" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
       <option name="ENABLE_SWING_INSPECTOR" value="false" />
@@ -601,8 +739,8 @@
       <properties />
       <listeners />
     </configuration>
-    <configuration name="emp_add.jsp" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" temporary="true" APPLICATION_SERVER_NAME="Tomcat 9.0.11" ALTERNATIVE_JRE_ENABLED="false">
-      <option name="OPEN_IN_BROWSER_URL" value="http://localhost:8080/pages/emp/emp_add.jsp" />
+    <configuration name="login.jsp (1)" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" temporary="true" APPLICATION_SERVER_NAME="Tomcat 9.0.1" ALTERNATIVE_JRE_ENABLED="false">
+      <option name="OPEN_IN_BROWSER_URL" value="http://localhost:8080/login.jsp" />
       <deployment>
         <artifact name="AMRproject:war exploded">
           <settings>
@@ -611,7 +749,7 @@
         </artifact>
       </deployment>
       <server-settings>
-        <option name="BASE_DIRECTORY_NAME" value="emp_add_jsp_AMRproject" />
+        <option name="BASE_DIRECTORY_NAME" value="login_jsp_(1)_AMRproject_2" />
       </server-settings>
       <predefined_log_file id="Tomcat" enabled="true" />
       <predefined_log_file id="Tomcat Catalina" enabled="true" />
@@ -620,7 +758,7 @@
       <predefined_log_file id="Tomcat Localhost Access" enabled="false" />
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <RunnerSettings RunnerId="Debug">
-        <option name="DEBUG_PORT" value="53308" />
+        <option name="DEBUG_PORT" value="63651" />
       </RunnerSettings>
       <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Debug">
         <option name="USE_ENV_VARIABLES" value="true" />
@@ -637,114 +775,6 @@
           <option name="PROGRAM_PARAMETERS" value="" />
         </SHUTDOWN>
       </ConfigurationWrapper>
-      <method>
-        <option name="BuildArtifacts" enabled="true">
-          <artifact name="AMRproject:war exploded" />
-        </option>
-      </method>
-    </configuration>
-    <configuration name="emp_edit.jsp (1)" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" temporary="true" APPLICATION_SERVER_NAME="Tomcat 9.0.11" ALTERNATIVE_JRE_ENABLED="false">
-      <option name="OPEN_IN_BROWSER_URL" value="http://localhost:8080/pages/emp/emp_edit.jsp" />
-      <deployment>
-        <artifact name="AMRproject:war exploded">
-          <settings>
-            <option name="CONTEXT_PATH" value="/" />
-          </settings>
-        </artifact>
-      </deployment>
-      <server-settings>
-        <option name="BASE_DIRECTORY_NAME" value="emp_edit_jsp_(1)_AMRproject" />
-      </server-settings>
-      <predefined_log_file id="Tomcat" enabled="true" />
-      <predefined_log_file id="Tomcat Catalina" enabled="true" />
-      <predefined_log_file id="Tomcat Manager" enabled="false" />
-      <predefined_log_file id="Tomcat Host Manager" enabled="false" />
-      <predefined_log_file id="Tomcat Localhost Access" enabled="false" />
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
-      <RunnerSettings RunnerId="Debug">
-        <option name="DEBUG_PORT" value="54396" />
-      </RunnerSettings>
-      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Debug">
-        <option name="USE_ENV_VARIABLES" value="true" />
-        <STARTUP>
-          <option name="USE_DEFAULT" value="true" />
-          <option name="SCRIPT" value="" />
-          <option name="VM_PARAMETERS" value="" />
-          <option name="PROGRAM_PARAMETERS" value="" />
-        </STARTUP>
-        <SHUTDOWN>
-          <option name="USE_DEFAULT" value="true" />
-          <option name="SCRIPT" value="" />
-          <option name="VM_PARAMETERS" value="" />
-          <option name="PROGRAM_PARAMETERS" value="" />
-        </SHUTDOWN>
-      </ConfigurationWrapper>
-      <method>
-        <option name="BuildArtifacts" enabled="true">
-          <artifact name="AMRproject:war exploded" />
-        </option>
-      </method>
-    </configuration>
-    <configuration name="emp_edit.jsp (2)" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" temporary="true" APPLICATION_SERVER_NAME="Tomcat 9.0.11" ALTERNATIVE_JRE_ENABLED="false">
-      <option name="OPEN_IN_BROWSER_URL" value="http://localhost:8080/pages/emp/emp_edit.jsp" />
-      <deployment>
-        <artifact name="AMRproject:war exploded">
-          <settings>
-            <option name="CONTEXT_PATH" value="/" />
-          </settings>
-        </artifact>
-      </deployment>
-      <server-settings>
-        <option name="BASE_DIRECTORY_NAME" value="emp_edit_jsp_(2)_AMRproject" />
-      </server-settings>
-      <predefined_log_file id="Tomcat" enabled="true" />
-      <predefined_log_file id="Tomcat Catalina" enabled="true" />
-      <predefined_log_file id="Tomcat Manager" enabled="false" />
-      <predefined_log_file id="Tomcat Host Manager" enabled="false" />
-      <predefined_log_file id="Tomcat Localhost Access" enabled="false" />
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
-      <RunnerSettings RunnerId="Debug">
-        <option name="DEBUG_PORT" value="57440" />
-      </RunnerSettings>
-      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Debug">
-        <option name="USE_ENV_VARIABLES" value="true" />
-        <STARTUP>
-          <option name="USE_DEFAULT" value="true" />
-          <option name="SCRIPT" value="" />
-          <option name="VM_PARAMETERS" value="" />
-          <option name="PROGRAM_PARAMETERS" value="" />
-        </STARTUP>
-        <SHUTDOWN>
-          <option name="USE_DEFAULT" value="true" />
-          <option name="SCRIPT" value="" />
-          <option name="VM_PARAMETERS" value="" />
-          <option name="PROGRAM_PARAMETERS" value="" />
-        </SHUTDOWN>
-      </ConfigurationWrapper>
-      <method>
-        <option name="BuildArtifacts" enabled="true">
-          <artifact name="AMRproject:war exploded" />
-        </option>
-      </method>
-    </configuration>
-    <configuration name="emp_edit.jsp" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" temporary="true" APPLICATION_SERVER_NAME="Tomcat 9.0.11" ALTERNATIVE_JRE_ENABLED="false">
-      <option name="OPEN_IN_BROWSER_URL" value="http://localhost:8080/pages/emp/emp_edit.jsp" />
-      <deployment>
-        <artifact name="AMRproject:war exploded">
-          <settings>
-            <option name="CONTEXT_PATH" value="/" />
-          </settings>
-        </artifact>
-      </deployment>
-      <server-settings>
-        <option name="BASE_DIRECTORY_NAME" value="emp_edit_jsp_AMRproject" />
-      </server-settings>
-      <predefined_log_file id="Tomcat" enabled="true" />
-      <predefined_log_file id="Tomcat Catalina" enabled="true" />
-      <predefined_log_file id="Tomcat Manager" enabled="false" />
-      <predefined_log_file id="Tomcat Host Manager" enabled="false" />
-      <predefined_log_file id="Tomcat Localhost Access" enabled="false" />
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Run">
         <option name="USE_ENV_VARIABLES" value="true" />
         <STARTUP>
@@ -766,7 +796,7 @@
         </option>
       </method>
     </configuration>
-    <configuration name="login.jsp (2)" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" temporary="true" APPLICATION_SERVER_NAME="Tomcat 9.0.11" ALTERNATIVE_JRE_ENABLED="false">
+    <configuration name="login.jsp" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" temporary="true" APPLICATION_SERVER_NAME="Tomcat 9.0.1" ALTERNATIVE_JRE_ENABLED="false">
       <option name="OPEN_IN_BROWSER_URL" value="http://localhost:8080/login.jsp" />
       <deployment>
         <artifact name="AMRproject:war exploded">
@@ -776,7 +806,7 @@
         </artifact>
       </deployment>
       <server-settings>
-        <option name="BASE_DIRECTORY_NAME" value="login_jsp_(2)_AMRproject_2" />
+        <option name="BASE_DIRECTORY_NAME" value="login_jsp_AMRproject" />
       </server-settings>
       <predefined_log_file id="Tomcat" enabled="true" />
       <predefined_log_file id="Tomcat Catalina" enabled="true" />
@@ -785,7 +815,7 @@
       <predefined_log_file id="Tomcat Localhost Access" enabled="false" />
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <RunnerSettings RunnerId="Debug">
-        <option name="DEBUG_PORT" value="54560" />
+        <option name="DEBUG_PORT" value="50211" />
       </RunnerSettings>
       <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Cover">
         <option name="USE_ENV_VARIABLES" value="true" />
@@ -817,26 +847,110 @@
           <option name="PROGRAM_PARAMETERS" value="" />
         </SHUTDOWN>
       </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Run">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <method>
+        <option name="BuildArtifacts" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="res_edit.jsp" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" temporary="true" APPLICATION_SERVER_NAME="Tomcat 9.0.1" ALTERNATIVE_JRE_ENABLED="false">
+      <option name="OPEN_IN_BROWSER_URL" value="http://localhost:8080/pages/res/res_edit.jsp" />
+      <option name="UPDATING_POLICY" value="restart-server" />
+      <deployment>
+        <artifact name="AMRproject:war exploded">
+          <settings>
+            <option name="CONTEXT_PATH" value="/" />
+          </settings>
+        </artifact>
+      </deployment>
+      <server-settings>
+        <option name="BASE_DIRECTORY_NAME" value="res_edit_jsp_AMRproject" />
+      </server-settings>
+      <predefined_log_file id="Tomcat" enabled="true" />
+      <predefined_log_file id="Tomcat Catalina" enabled="true" />
+      <predefined_log_file id="Tomcat Manager" enabled="false" />
+      <predefined_log_file id="Tomcat Host Manager" enabled="false" />
+      <predefined_log_file id="Tomcat Localhost Access" enabled="false" />
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <RunnerSettings RunnerId="Debug">
+        <option name="DEBUG_PORT" value="51437" />
+      </RunnerSettings>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Cover">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Debug">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Run">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
       <method>
         <option name="BuildArtifacts" enabled="true">
           <artifact name="AMRproject:war exploded" />
         </option>
       </method>
     </configuration>
-    <list size="5">
-      <item index="0" class="java.lang.String" itemvalue="Tomcat Server.login.jsp (2)" />
-      <item index="1" class="java.lang.String" itemvalue="Tomcat Server.emp_add.jsp" />
-      <item index="2" class="java.lang.String" itemvalue="Tomcat Server.emp_edit.jsp" />
-      <item index="3" class="java.lang.String" itemvalue="Tomcat Server.emp_edit.jsp (1)" />
-      <item index="4" class="java.lang.String" itemvalue="Tomcat Server.emp_edit.jsp (2)" />
+    <list size="4">
+      <item index="0" class="java.lang.String" itemvalue="Application.MathUtil" />
+      <item index="1" class="java.lang.String" itemvalue="Tomcat Server.login.jsp" />
+      <item index="2" class="java.lang.String" itemvalue="Tomcat Server.res_edit.jsp" />
+      <item index="3" class="java.lang.String" itemvalue="Tomcat Server.login.jsp (1)" />
     </list>
     <recent_temporary>
-      <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Tomcat Server.login.jsp (2)" />
-        <item index="1" class="java.lang.String" itemvalue="Tomcat Server.emp_edit.jsp (2)" />
-        <item index="2" class="java.lang.String" itemvalue="Tomcat Server.emp_edit.jsp (1)" />
-        <item index="3" class="java.lang.String" itemvalue="Tomcat Server.emp_edit.jsp" />
-        <item index="4" class="java.lang.String" itemvalue="Tomcat Server.emp_add.jsp" />
+      <list size="4">
+        <item index="0" class="java.lang.String" itemvalue="Tomcat Server.login.jsp (1)" />
+        <item index="1" class="java.lang.String" itemvalue="Tomcat Server.res_edit.jsp" />
+        <item index="2" class="java.lang.String" itemvalue="Tomcat Server.login.jsp" />
+        <item index="3" class="java.lang.String" itemvalue="Application.MathUtil" />
       </list>
     </recent_temporary>
   </component>
@@ -853,13 +967,13 @@
       <workItem from="1510062140663" duration="2112000" />
       <workItem from="1510137474806" duration="150000" />
       <workItem from="1510137681584" duration="10661000" />
-      <workItem from="1510157035597" duration="7000" />
-      <workItem from="1510157276481" duration="545000" />
-      <workItem from="1510189227571" duration="12643000" />
-      <workItem from="1510215538034" duration="22639000" />
-      <workItem from="1510290863124" duration="9000" />
-      <workItem from="1510290945226" duration="3023000" />
-      <workItem from="1511452013050" duration="19000" />
+      <workItem from="1510157035597" duration="371000" />
+      <workItem from="1510797085536" duration="826000" />
+      <workItem from="1510810559686" duration="9308000" />
+      <workItem from="1510822066797" duration="2488000" />
+      <workItem from="1510824582866" duration="1985000" />
+      <workItem from="1510965367967" duration="1367000" />
+      <workItem from="1511418566587" duration="27228000" />
     </task>
     <task id="LOCAL-00001" summary="create ssmProject">
       <created>1510063558637</created>
@@ -882,24 +996,31 @@
       <option name="project" value="LOCAL" />
       <updated>1510137783868</updated>
     </task>
-    <task id="LOCAL-00004" summary="提交继续做完">
-      <created>1510794817984</created>
+    <task id="LOCAL-00004" summary="home3">
+      <created>1510157148240</created>
       <option name="number" value="00004" />
       <option name="presentableId" value="LOCAL-00004" />
       <option name="project" value="LOCAL" />
-      <updated>1510794817984</updated>
+      <updated>1510157148240</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="home3">
+      <created>1510797103486</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1510797103486</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="51808000" />
+    <option name="totallyTimeSpent" value="56496000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-16" y="-16" width="3872" height="2092" extended-state="6" />
+    <frame x="-6" y="-6" width="1933" height="1053" extended-state="6" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.34212035" sideWeight="0.50106835" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32984293" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="CDI" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -910,68 +1031,30 @@
       <window_info id="JSF" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.34212035" sideWeight="0.49893162" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3988827" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32960895" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32984293" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3295129" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32960895" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32960895" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32984293" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.18215811" sideWeight="0.4965157" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.19893333" sideWeight="0.49256507" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Bean Validation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25240386" sideWeight="0.5034843" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.19893333" sideWeight="0.50743496" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32960895" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.18108974" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3299933" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Documentation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="FLOATING" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" x="84" y="84" width="3672" height="1892" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.12906666" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Coverage" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3298611" sideWeight="0.5" order="4" side_tool="true" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Coverage" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="true" content_ui="tabs" />
     </layout>
-    <layout-to-restore>
-      <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32984293" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="CDI" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.18108974" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="JSF" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.34212035" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3299933" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3295129" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32984293" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
-      <window_info id="Coverage" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3298611" sideWeight="0.5" order="11" side_tool="true" content_ui="tabs" />
-      <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32984293" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25240386" sideWeight="0.4965157" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Bean Validation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
-      <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25240386" sideWeight="0.5034843" order="6" side_tool="true" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-    </layout-to-restore>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
@@ -982,426 +1065,487 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="create ssmProject" />
     <MESSAGE value="home2" />
-    <MESSAGE value="提交继续做完" />
-    <option name="LAST_COMMIT_MESSAGE" value="提交继续做完" />
+    <MESSAGE value="home3" />
+    <option name="LAST_COMMIT_MESSAGE" value="home3" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/lh/action/AdminAction.java</url>
-          <line>67</line>
+          <url>file://$PROJECT_DIR$/../AMRproject/src/main/java/lh/action/PurchaseAction.java</url>
+          <line>68</line>
           <properties />
-          <option name="timeStamp" value="18" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/lh/action/EmpAction.java</url>
-          <line>40</line>
-          <properties />
-          <option name="timeStamp" value="87" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/lh/action/EmpAction.java</url>
-          <line>44</line>
-          <properties />
-          <option name="timeStamp" value="89" />
+          <option name="timeStamp" value="58" />
         </line-breakpoint>
       </breakpoints>
-      <option name="time" value="90" />
+      <option name="time" value="59" />
     </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/out/artifacts/AMRproject_war_exploded/upload/emp/nophoto.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/pages/plugins/search.jsp">
+    <entry file="file://$PROJECT_DIR$/../AMRproject/src/main/java/lh/vo/Emp.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="486">
-          <caret line="69" column="43" lean-forward="false" selection-start-line="69" selection-start-column="43" selection-end-line="69" selection-end-column="43" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/pages/plugins/split_bar.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="288">
-          <caret line="45" column="0" lean-forward="false" selection-start-line="45" selection-start-column="0" selection-end-line="45" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/applicationContext-MVC.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-288">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        <state relative-caret-position="84">
+          <caret line="4" column="13" lean-forward="false" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/lh/service/AbstractService.java">
+    <entry file="file://$PROJECT_DIR$/../AMRproject/src/main/java/lh/dao/ITypeDAO.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="96">
-          <caret line="2" column="22" lean-forward="false" selection-start-line="2" selection-start-column="22" selection-end-line="2" selection-end-column="22" />
+        <state relative-caret-position="105">
+          <caret line="9" column="17" lean-forward="false" selection-start-line="9" selection-start-column="17" selection-end-line="9" selection-end-column="17" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/lh/service/IDeptServiceImpl.java" />
-    <entry file="file://$PROJECT_DIR$/web/pages/plugins/include_title_head.jsp">
+    <entry file="jar://C:/Program Files/Java/jdk-9/lib/src.zip!/java.base/java/lang/Math.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        <state relative-caret-position="-1140">
+          <caret line="738" column="23" lean-forward="false" selection-start-line="738" selection-start-column="23" selection-end-line="738" selection-end-column="23" />
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/js/pages/dept/dept_list.js">
+    <entry file="file://$PROJECT_DIR$/../AMRproject/src/main/java/lh/util/MathUtil.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="528">
-          <caret line="11" column="20" lean-forward="true" selection-start-line="11" selection-start-column="20" selection-end-line="11" selection-end-column="20" />
+        <state relative-caret-position="189">
+          <caret line="9" column="0" lean-forward="false" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/lh/service/IDeptService.java">
+    <entry file="file://$PROJECT_DIR$/../AMRproject/src/main/java/lh/dao/IDeptDAO.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="480">
-          <caret line="10" column="58" lean-forward="false" selection-start-line="10" selection-start-column="58" selection-end-line="10" selection-end-column="58" />
+        <state relative-caret-position="189">
+          <caret line="9" column="17" lean-forward="false" selection-start-line="9" selection-start-column="17" selection-end-line="9" selection-end-column="17" />
           <folding>
             <element signature="imports" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/lh/dao/IDeptDAO.java">
+    <entry file="file://$PROJECT_DIR$/../AMRproject/src/main/java/lh/service/IDeptService.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="480">
-          <caret line="10" column="32" lean-forward="false" selection-start-line="10" selection-start-column="17" selection-end-line="10" selection-end-column="32" />
+        <state relative-caret-position="84">
+          <caret line="7" column="17" lean-forward="false" selection-start-line="7" selection-start-column="17" selection-end-line="7" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../AMRproject/src/main/resources/applicationContext-MVC.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1050">
+          <caret line="50" column="8" lean-forward="false" selection-start-line="50" selection-start-column="8" selection-end-line="50" selection-end-column="8" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../AMRproject/src/main/resources/applicationContext.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="693">
+          <caret line="33" column="27" lean-forward="false" selection-start-line="33" selection-start-column="27" selection-end-line="33" selection-end-column="27" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../AMRproject/src/main/java/lh/action/TypeAction.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="470">
+          <caret line="56" column="21" lean-forward="false" selection-start-line="56" selection-start-column="21" selection-end-line="56" selection-end-column="21" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../AMRproject/src/main/java/lh/dao/IMemberDAO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="9" column="17" lean-forward="false" selection-start-line="9" selection-start-column="17" selection-end-line="9" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-beans/4.3.12.RELEASE/spring-beans-4.3.12.RELEASE.jar!/org/springframework/beans/factory/annotation/AutowiredAnnotationBeanPostProcessor.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="530" column="0" lean-forward="false" selection-start-line="530" selection-start-column="0" selection-end-line="530" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../AMRproject/src/main/java/lh/service/ITypeService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="8" column="15" lean-forward="false" selection-start-line="8" selection-start-column="15" selection-end-line="8" selection-end-column="15" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../AMRproject/src/main/resources/lh/vo/Dept.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="63">
+          <caret line="3" column="29" lean-forward="false" selection-start-line="3" selection-start-column="29" selection-end-line="3" selection-end-column="29" />
           <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/lh/service/impl/DeptServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1008">
-          <caret line="28" column="42" lean-forward="false" selection-start-line="28" selection-start-column="42" selection-end-line="28" selection-end-column="42" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/pages/action/action_list.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1200">
-          <caret line="37" column="61" lean-forward="false" selection-start-line="37" selection-start-column="61" selection-end-line="37" selection-end-column="61" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/pages/dept/dept_list.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="672">
-          <caret line="41" column="78" lean-forward="true" selection-start-line="41" selection-start-column="78" selection-end-line="41" selection-end-column="78" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/lh/action/DeptAction.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="172">
-          <caret line="55" column="0" lean-forward="false" selection-start-line="55" selection-start-column="0" selection-end-line="55" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jrt://C:/Program Files/Java/jdk-9!/jdk.javadoc/com/sun/tools/doclets/internal/toolkit/resources/jquery/jquery-ui.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="366">
-          <caret line="202" column="4" lean-forward="false" selection-start-line="202" selection-start-column="4" selection-end-line="202" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/jquery/validate/jquery.validate.min.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="366">
-          <caret line="290" column="15" lean-forward="false" selection-start-line="290" selection-start-column="15" selection-end-line="290" selection-end-column="15" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/lh/vo/Dept.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="672">
-          <caret line="14" column="9" lean-forward="true" selection-start-line="14" selection-start-column="9" selection-end-line="14" selection-end-column="9" />
-          <folding>
-            <marker date="1510224148084" expanded="true" signature="244:276" ph="SELECT did,t... dept" />
-            <marker date="1510224148084" expanded="true" signature="353:391" ph="SELECT actid... actin" />
-            <marker date="1510224148084" expanded="true" signature="353:458" ph="SELECT actid... actin" />
-            <marker date="1510224148084" expanded="true" signature="413:457" ph="SELECT gid f... dept_groups" />
-            <marker date="1510224148084" expanded="true" signature="508:555" ph="UPDATE dept " />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/lh/dao/ILevelDAO.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="6" column="37" lean-forward="false" selection-start-line="6" selection-start-column="37" selection-end-line="6" selection-end-column="37" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-webmvc/4.3.12.RELEASE/spring-webmvc-4.3.12.RELEASE.jar!/org/springframework/web/servlet/ModelAndView.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="366">
-          <caret line="127" column="24" lean-forward="false" selection-start-line="127" selection-start-column="24" selection-end-line="127" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/lh/vo/Emp.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="779">
-          <caret line="103" column="16" lean-forward="false" selection-start-line="103" selection-start-column="16" selection-end-line="103" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/out/artifacts/AMRproject_war_exploded/upload/emp/6190ced3-d2bb-4f8c-bec3-02a88e90c2c4.png" />
-    <entry file="file://$PROJECT_DIR$/out/artifacts/AMRproject_war_exploded/upload/emp/f6050de2-6a92-4b30-9d85-c6fb07f2e7f1.jpeg" />
-    <entry file="file://$PROJECT_DIR$/out/artifacts/AMRproject_war_exploded/upload/emp/d344c004-f25c-454f-a7dd-e39f2c5a79d5.jpeg" />
-    <entry file="file://$PROJECT_DIR$/out/artifacts/AMRproject_war_exploded/upload/emp/aa8af571-bd67-4de0-9b93-fc0c4e143bdb.jpeg">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/lh/action/LoginAction.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="480">
-          <caret line="31" column="30" lean-forward="true" selection-start-line="31" selection-start-column="30" selection-end-line="31" selection-end-column="30" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/pages/emp/emp_list.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-330">
-          <caret line="42" column="58" lean-forward="false" selection-start-line="42" selection-start-column="58" selection-end-line="42" selection-end-column="58" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/js/pages/emp/emp_edit.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="5" column="3" lean-forward="false" selection-start-line="5" selection-start-column="3" selection-end-line="5" selection-end-column="3" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/pages/plugins/include_javascript_head.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/pages/emp/emp_edit.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-480">
-          <caret line="71" column="72" lean-forward="false" selection-start-line="71" selection-start-column="72" selection-end-line="71" selection-end-column="72" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/lh/action/AbstractAction.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-474">
-          <caret line="18" column="22" lean-forward="false" selection-start-line="18" selection-start-column="22" selection-end-line="18" selection-end-column="22" />
-          <folding>
-            <element signature="method#setMsgAndUrl#0;class#AbstractAction#0" expanded="false" />
-            <element signature="method#getResourceValue#0;class#AbstractAction#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/lh/action/AbstractActionAdapter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="12" column="60" lean-forward="false" selection-start-line="12" selection-start-column="60" selection-end-line="12" selection-end-column="60" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/lh/dao/IEmpDAO.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="9" column="34" lean-forward="false" selection-start-line="9" selection-start-column="34" selection-end-line="9" selection-end-column="34" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/lh/dao/IDAO.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="336">
-          <caret line="8" column="17" lean-forward="false" selection-start-line="8" selection-start-column="17" selection-end-line="8" selection-end-column="17" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/Messages.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/Validations.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-aop/4.3.12.RELEASE/spring-aop-4.3.12.RELEASE.jar!/org/springframework/aop/interceptor/ExposeInvocationInterceptor.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="366">
-          <caret line="40" column="0" lean-forward="false" selection-start-line="40" selection-start-column="0" selection-end-line="40" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/lh/util/password/EncryptUtil.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="5" column="24" lean-forward="false" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="24" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-tx/4.3.12.RELEASE/spring-tx-4.3.12.RELEASE.jar!/org/springframework/transaction/interceptor/TransactionAspectSupport.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="5712">
-          <caret line="153" column="0" lean-forward="false" selection-start-line="153" selection-start-column="0" selection-end-line="153" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/lh/vo/Level.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/lh/vo/Emp.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3696">
-          <caret line="77" column="37" lean-forward="false" selection-start-line="77" selection-start-column="37" selection-end-line="77" selection-end-column="37" />
-          <folding>
-            <marker date="1510283487339" expanded="true" signature="926:965" ph="select lid,t... level" />
-            <marker date="1510283487339" expanded="true" signature="1258:1457" ph="insert into emp... " />
-            <marker date="1510283487339" expanded="true" signature="1563:1643" ph="SELECT eid,d... emp" />
-            <marker date="1510283487339" expanded="true" signature="1563:1796" ph="SELECT eid,d... emp" />
-            <marker date="1510283487339" expanded="true" signature="2124:2170" ph="SELECT did,t... dept" />
-            <marker date="1510283487339" expanded="true" signature="2275:2502" ph="SELECT eid,d... emp" />
-            <marker date="1510283487339" expanded="true" signature="2816:3126" ph="UPDATE emp s... " />
+            <marker date="1510797117195" expanded="true" signature="244:276" ph="SELECT did,t... dept" />
+            <marker date="1510797117195" expanded="true" signature="353:458" ph="SELECT actid... action" />
+            <marker date="1510797117195" expanded="true" signature="413:457" ph="SELECT gid f... dept_groups" />
+            <marker date="1510797117195" expanded="true" signature="508:555" ph="UPDATE dept " />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-aop/4.3.12.RELEASE/spring-aop-4.3.12.RELEASE.jar!/org/springframework/aop/support/AopUtils.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="6960">
+        <state relative-caret-position="551">
           <caret line="178" column="0" lean-forward="false" selection-start-line="178" selection-start-column="0" selection-end-line="178" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/Pages.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="528">
-          <caret line="11" column="15" lean-forward="false" selection-start-line="11" selection-start-column="15" selection-end-line="11" selection-end-column="15" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/login.jsp">
+    <entry file="jar://$MAVEN_REPOSITORY$/org/mybatis/mybatis/3.4.1/mybatis-3.4.1.jar!/org/apache/ibatis/builder/xml/mybatis-3-mapper.dtd">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1824">
-          <caret line="38" column="80" lean-forward="false" selection-start-line="38" selection-start-column="80" selection-end-line="38" selection-end-column="80" />
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/pages/emp/emp_add.jsp">
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-webmvc/4.3.12.RELEASE/spring-webmvc-4.3.12.RELEASE-sources.jar!/org/springframework/web/servlet/ModelAndView.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="720">
-          <caret line="15" column="57" lean-forward="false" selection-start-line="15" selection-start-column="57" selection-end-line="15" selection-end-column="57" />
+        <state relative-caret-position="170">
+          <caret line="301" column="24" lean-forward="false" selection-start-line="301" selection-start-column="24" selection-end-line="301" selection-end-column="24" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/js/pages/emp/emp_add.js">
+    <entry file="file://$PROJECT_DIR$/../AMRproject/src/main/java/lh/action/AbstractAction.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3840">
-          <caret line="80" column="0" lean-forward="false" selection-start-line="80" selection-start-column="0" selection-end-line="80" selection-end-column="0" />
+        <state relative-caret-position="105">
+          <caret line="18" column="22" lean-forward="false" selection-start-line="18" selection-start-column="22" selection-end-line="18" selection-end-column="22" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/pages/forward.jsp">
+    <entry file="file://$PROJECT_DIR$/../AMRproject/src/main/java/lh/dao/IPurchaseDAO.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2016">
-          <caret line="42" column="0" lean-forward="false" selection-start-line="42" selection-start-column="0" selection-end-line="42" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-web/4.3.12.RELEASE/spring-web-4.3.12.RELEASE.jar!/org/springframework/web/method/support/InvocableHandlerMethod.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1950">
-          <caret line="123" column="0" lean-forward="false" selection-start-line="123" selection-start-column="0" selection-end-line="123" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/lh/action/AdminAction.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1488">
-          <caret line="58" column="36" lean-forward="false" selection-start-line="58" selection-start-column="36" selection-end-line="58" selection-end-column="36" />
-          <folding>
-            <element signature="method#addPre#0;class#AdminAction#0" expanded="false" />
-            <element signature="method#add#0;class#AdminAction#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/lh/service/IEmpService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1008">
-          <caret line="26" column="12" lean-forward="false" selection-start-line="26" selection-start-column="12" selection-end-line="26" selection-end-column="12" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/lh/action/EmpAction.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1920">
-          <caret line="54" column="18" lean-forward="false" selection-start-line="54" selection-start-column="17" selection-end-line="54" selection-end-column="18" />
+        <state relative-caret-position="210">
+          <caret line="10" column="19" lean-forward="false" selection-start-line="10" selection-start-column="19" selection-end-line="10" selection-end-column="19" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="method#addPre#0;class#EmpAction#0" expanded="false" />
-            <element signature="method#editPre#0;class#EmpAction#0" expanded="false" />
-            <element signature="e#5046#5047#0" expanded="true" />
-            <element signature="e#5083#5084#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/lh/service/impl/EmpServiceImpl.java">
+    <entry file="file://$PROJECT_DIR$/../AMRproject/src/main/resources/Pages.properties">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="555">
-          <caret line="109" column="21" lean-forward="false" selection-start-line="109" selection-start-column="21" selection-end-line="109" selection-end-column="21" />
+        <state relative-caret-position="386">
+          <caret line="22" column="34" lean-forward="false" selection-start-line="22" selection-start-column="34" selection-end-line="22" selection-end-column="34" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../AMRproject/web/pages/plugins/split_page_plugin_bar.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../AMRproject/web/pages/plugins/split_bar.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../AMRproject/src/main/java/lh/service/impl/DeptServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="183">
+          <caret line="13" column="14" lean-forward="true" selection-start-line="13" selection-start-column="14" selection-end-line="13" selection-end-column="14" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="method#listSplit#0;class#EmpServiceImpl#0" expanded="false" />
-            <element signature="method#findGroupsByDid#0;class#EmpServiceImpl#0" expanded="false" />
-            <element signature="method#listSplitEmp#0;class#EmpServiceImpl#0" expanded="false" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../AMRproject/src/main/java/lh/service/impl/EmpServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="18" column="13" lean-forward="false" selection-start-line="18" selection-start-column="13" selection-end-line="18" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../AMRproject/src/main/java/lh/service/impl/MemberServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="13" column="13" lean-forward="false" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../AMRproject/src/main/java/lh/service/impl/TypeServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="344">
+          <caret line="34" column="46" lean-forward="false" selection-start-line="34" selection-start-column="46" selection-end-line="34" selection-end-column="46" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../AMRproject/src/main/java/lh/action/MemberAction.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="147">
+          <caret line="20" column="13" lean-forward="false" selection-start-line="20" selection-start-column="13" selection-end-line="20" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../AMRproject/src/main/java/lh/action/AdminAction.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="298">
+          <caret line="101" column="23" lean-forward="false" selection-start-line="101" selection-start-column="23" selection-end-line="101" selection-end-column="23" />
+          <folding>
+            <element signature="e#4194#4195#0" expanded="true" />
+            <element signature="e#4236#4237#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../AMRproject/src/main/java/lh/action/EmpAction.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1218">
+          <caret line="71" column="0" lean-forward="false" selection-start-line="71" selection-start-column="0" selection-end-line="71" selection-end-column="0" />
+          <folding>
+            <element signature="e#5597#5598#0" expanded="true" />
+            <element signature="e#5637#5638#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../AMRproject/src/main/java/lh/action/AbstractActionAdapter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="99">
+          <caret line="17" column="38" lean-forward="false" selection-start-line="17" selection-start-column="38" selection-end-line="17" selection-end-column="38" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../AMRproject/src/main/java/lh/service/impl/DetailsServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="275">
+          <caret line="55" column="34" lean-forward="false" selection-start-line="55" selection-start-column="34" selection-end-line="55" selection-end-column="34" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../AMRproject/web/pages/res/res_edit.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="63">
+          <caret line="15" column="59" lean-forward="true" selection-start-line="15" selection-start-column="59" selection-end-line="15" selection-end-column="59" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../AMRproject/web/js/pages/res/res_edit.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="614">
+          <caret line="42" column="28" lean-forward="true" selection-start-line="42" selection-start-column="28" selection-end-line="42" selection-end-column="28" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../AMRproject/web/js/pages/res/res_emp_list.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../AMRproject/web/pages/res/res_emp_list.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="252">
+          <caret line="15" column="61" lean-forward="false" selection-start-line="15" selection-start-column="61" selection-end-line="15" selection-end-column="61" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../AMRproject/web/pages/res/res_list.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="315">
+          <caret line="15" column="56" lean-forward="false" selection-start-line="15" selection-start-column="56" selection-end-line="15" selection-end-column="56" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../AMRproject/web/js/pages/res/res_list.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../AMRproject/web/pages/res/res_prebuy.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="168">
+          <caret line="14" column="57" lean-forward="true" selection-start-line="14" selection-start-column="57" selection-end-line="14" selection-end-column="57" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../AMRproject/web/js/pages/res/res_prebuy.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="672">
+          <caret line="41" column="36" lean-forward="false" selection-start-line="41" selection-start-column="36" selection-end-line="41" selection-end-column="36" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../AMRproject/src/main/java/lh/action/DetailsAction.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="162">
+          <caret line="154" column="0" lean-forward="false" selection-start-line="154" selection-start-column="0" selection-end-line="154" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#6401#6402#0" expanded="true" />
+            <element signature="e#6428#6429#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../AMRproject/src/main/java/lh/dao/IDAO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="168">
+          <caret line="9" column="7" lean-forward="false" selection-start-line="9" selection-start-column="7" selection-end-line="9" selection-end-column="7" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../AMRproject/src/main/resources/lh/vo/Purchase.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="89">
+          <caret line="12" column="25" lean-forward="false" selection-start-line="12" selection-start-column="25" selection-end-line="12" selection-end-column="25" />
+          <folding>
+            <marker date="1511449930865" expanded="true" signature="298:430" ph="insert into purchase... " />
+            <marker date="1511449930865" expanded="true" signature="524:589" ph="SELECT pid,e... purchase" />
+            <marker date="1511449930865" expanded="true" signature="524:755" ph="SELECT pid,e... purchase" />
+            <marker date="1511449930865" expanded="true" signature="1100:1165" ph="SELECT pid,e... purchase" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../AMRproject/src/main/java/lh/service/IPurchaseService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="189">
+          <caret line="11" column="17" lean-forward="true" selection-start-line="11" selection-start-column="17" selection-end-line="11" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../AMRproject/web/pages/purchase/purchase_list.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="278">
+          <caret line="44" column="80" lean-forward="false" selection-start-line="44" selection-start-column="69" selection-end-line="44" selection-end-column="80" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../AMRproject/src/main/java/lh/vo/Purchase.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-16">
+          <caret line="12" column="25" lean-forward="true" selection-start-line="12" selection-start-column="25" selection-end-line="12" selection-end-column="25" />
+          <folding>
+            <element signature="e#320#321#0" expanded="true" />
+            <element signature="e#355#356#0" expanded="true" />
+            <element signature="e#385#386#0" expanded="true" />
+            <element signature="e#429#430#0" expanded="true" />
+            <element signature="e#462#463#0" expanded="true" />
+            <element signature="e#521#522#0" expanded="true" />
+            <element signature="e#565#566#0" expanded="true" />
+            <element signature="e#722#723#0" expanded="true" />
+            <element signature="e#748#749#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../AMRproject/web/pages/purchase/purchase_show.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="714">
+          <caret line="40" column="58" lean-forward="false" selection-start-line="40" selection-start-column="58" selection-end-line="40" selection-end-column="58" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../AMRproject/src/main/resources/lh/vo/Emp.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="33" lean-forward="false" selection-start-line="0" selection-start-column="32" selection-end-line="0" selection-end-column="33" />
+          <folding>
+            <marker date="1510811770157" expanded="true" signature="926:965" ph="select lid,t... level" />
+            <marker date="1510811770157" expanded="true" signature="1258:1457" ph="insert into emp... " />
+            <marker date="1510811770157" expanded="true" signature="1563:1796" ph="SELECT eid,d... emp" />
+            <marker date="1510811770157" expanded="true" signature="2124:2170" ph="SELECT did,t... dept" />
+            <marker date="1510811770157" expanded="true" signature="2275:2502" ph="SELECT eid,d... emp" />
+            <marker date="1510811770157" expanded="true" signature="3215:3258" ph="SELECT count... emp" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../AMRproject/src/main/resources/lh/vo/Details.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="63">
+          <caret line="3" column="31" lean-forward="false" selection-start-line="3" selection-start-column="31" selection-end-line="3" selection-end-column="31" />
+          <folding>
+            <marker date="1511450659511" expanded="true" signature="254:393" ph="INSERT into details... " />
+            <marker date="1511450659511" expanded="true" signature="260:273" ph="SELECT tid,t... type" />
+            <marker date="1511450659511" expanded="true" signature="490:598" ph="SELECT did,p... details" />
+            <marker date="1511450659511" expanded="true" signature="693:785" ph="SELECT did,p... details" />
+            <marker date="1511450659511" expanded="true" signature="877:969" ph="SELECT did,p... details" />
+            <marker date="1511450659511" expanded="true" signature="1063:1112" ph="SELECT count... details" />
+            <marker date="1511450659511" expanded="true" signature="1190:1326" ph="UPDATE detai... " />
+            <marker date="1511450659511" expanded="true" signature="1404:1456" ph="UPDATE detai... " />
+            <marker date="1511450659511" expanded="true" signature="1531:1593" ph="UPDATE detai... " />
+            <marker date="1511450659511" expanded="true" signature="1668:1700" ph="DELETE FROM " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../AMRproject/src/main/java/lh/dao/IDetailsDAO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="320">
+          <caret line="19" column="17" lean-forward="false" selection-start-line="19" selection-start-column="17" selection-end-line="19" selection-end-column="17" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../AMRproject/src/main/java/lh/service/impl/PurchaseServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="131">
+          <caret line="62" column="0" lean-forward="true" selection-start-line="62" selection-start-column="0" selection-end-line="62" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../AMRproject/web/login.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="425">
+          <caret line="38" column="77" lean-forward="false" selection-start-line="38" selection-start-column="77" selection-end-line="38" selection-end-column="77" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../AMRproject/src/main/java/lh/action/PurchaseAction.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="924">
+          <caret line="70" column="0" lean-forward="true" selection-start-line="70" selection-start-column="0" selection-end-line="70" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>

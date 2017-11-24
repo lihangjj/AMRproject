@@ -13,7 +13,7 @@
 <head>
 <base href="<%=basePath%>">
 <jsp:include page="/pages/plugins/include_javascript_head.jsp" />
-<script type="text/javascript" src="js/pages/res/res_audit.js"></script> 
+<script type="text/javascript" src="/js/pages/res/res_audit.js"></script>
 </head>
 <body class="hold-transition skin-blue sidebar-mini">
 	<div class="wrapper">
@@ -30,6 +30,8 @@
 							<h3 class="box-title"><strong>员工领取记录</strong></h3>
 						</div>
 						<!-- /.box-header -->
+						<jsp:include page="/pages/plugins/search.jsp"/>
+
 						<div class="box-body table-responsive no-padding">
 							<table class="table table-hover">
 								<tr>
@@ -41,13 +43,13 @@
 									<th class="text-center"><strong>是否归还？</strong></th>
 									<th class="text-center"><strong>操作</strong></th>
 								</tr>
-								<c:forEach items="${allTakes}" var="take">
+								<c:forEach items="${allTake}" var="take">
 									<tr>
-										<td class="text-center"><img src="upload/res/${resMap[take.res.rid].photo}" class="img" style="width:30px;"> ${resMap[take.res.rid].title}</a>
+										<td class="text-center"><img src="upload/res/${resMap[take.tkid].photo}" class="img" style="width:30px;"> ${resMap[take.tkid].title}</a>
 										</td>
 										<td class="text-center"><fmt:formatDate value="${take.gdate}"/></td>
 										<td class="text-center">${take.amount }</td>
-										<td class="text-center">${resMap[take.res.rid].amount}</td>
+										<td class="text-center">${resMap[take.tkid].amount}</td>
 										<td class="text-center"><span id="audit-${take.tkid}">
 											<c:if test="${take.status == 0}">
 												<span class="text-warning">等待审核</span>
@@ -67,7 +69,7 @@
 											</span>
 										</td>
 										<td class="text-center">
-											<c:if test="${resMap[take.res.rid].rflag == 1}">
+											<c:if test="${resMap[take.tkid].rflag == 1}">
 												<c:if test="${take.rdate == null}">
 													<span class="text-danger">未归还</span>												
 												</c:if>
@@ -75,7 +77,7 @@
 													<span class="text-info">已归还</span>												
 												</c:if>
 											</c:if>
-											<c:if test="${resMap[take.res.rid].rflag == 0}">
+											<c:if test="${resMap[take.tkid].rflag == 0}">
 												<span class="text-info">不需要归还</span>
 											</c:if>
 										</td>
@@ -95,7 +97,7 @@
 							</table>
 						</div> 
 						<!-- /.box-body -->
-						<jsp:include page="/pages/plugins/split_page_plugin_bar.jsp"/>
+						<jsp:include page="/pages/plugins/split_bar.jsp"/>
 						<jsp:include page="/pages/plugins/include_alert.jsp"/> 
 					</div>
 					<!-- /.box -->

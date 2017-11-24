@@ -12,7 +12,7 @@
 <head>
 <base href="<%=basePath%>">
 <jsp:include page="/pages/plugins/include_javascript_head.jsp" />
-<script type="text/javascript" src="js/pages/res/res_preget.js"></script> 
+<script type="text/javascript" src="/js/pages/res/res_preget.js"></script>
 </head>
 <body class="hold-transition skin-blue sidebar-mini">
 	<div class="wrapper">
@@ -26,7 +26,7 @@
 				<div class="col-xs-12">
 					<div class="box">
 						<div class="box-header">
-							<h3 class="box-title"><strong>待购用品</strong></h3>
+							<h3 class="box-title"><strong>待领用品</strong></h3>
 						</div>
 						<!-- /.box-header -->
 						<div class="box-body table-responsive no-padding">
@@ -38,7 +38,7 @@
 									<th class="text-center" style="width:70%"><strong>商品名称</strong></th>
 									<th class="text-center" style="width:20%"><strong>购买数量</strong></th>
 								</tr>
-								<c:forEach items="${allRess}" var="res">
+								<c:forEach items="${allRes}" var="res">
 									<tr id="res-${allTakes[res.rid].tkid}">
 										<td class="text-center">
 											<input type="checkbox" id="tkid" name="tkid" value="${allTakes[res.rid].tkid}">
@@ -56,7 +56,7 @@
 							<div>
 								<button class="btn btn-info" id="editBtn">修改数量</button>
 								<button class="btn btn-danger" id="rmBtn">移出清单</button>
-								<a href="pages/res/get.action" class="btn btn-primary" id="getBtn">领取申请</a>
+								<button  class="btn btn-primary" id="getBtn">领取申请</button>
 							</div>
 						</div> 
 						<!-- /.box-body -->

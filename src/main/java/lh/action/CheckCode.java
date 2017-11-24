@@ -16,7 +16,6 @@ public class CheckCode {
             return false;
         } else {
             String rand= (String) request.getSession().getAttribute("rand");
-            System.out.println(rand);
             if (code.equalsIgnoreCase(rand)) {
                 return true;
             }

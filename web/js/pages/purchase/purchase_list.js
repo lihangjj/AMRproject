@@ -13,6 +13,9 @@ function audit(status) {
 		} else {
 			operateAlert(!data.trim() == "true","购入申请通过！","购入申请拒绝！") ;
 		}
-		$("#auditDiv").hide() ;
+        $("#passBut").text("审核已通过");
+        $("#passBut").attr("disabled",true);
+        $("#passBut").addClass("btn-success")
+		$("#refBut").hide() ;
 	},"text") ;
 }

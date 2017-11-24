@@ -7,6 +7,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Scope;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.multipart.MultipartFile;
 import org.springframework.web.servlet.ModelAndView;
 
@@ -68,7 +69,6 @@ public class EmpAction extends AbstractActionAdapter {
             ModelAndView modelAndView = new ModelAndView("emp/emp_list");
             try {
                 columnData = "管理员编号:eid|管理员名字:name|管理员电话:phone|管理员工资:salary";
-                url = "/pages/emp/list";
                 handSplit(request);
                 modelAndView.addAllObjects(empService.listSplitEmp(column, keyWord, currentPage, lineSize));
             } catch (Exception e) {
@@ -114,7 +114,7 @@ public class EmpAction extends AbstractActionAdapter {
             emp.setHeid((Integer) request.getSession().getAttribute("eid"));
             ModelAndView modelAndView = new ModelAndView("forward");
             try {
-                title="雇员";
+                title = "雇员";
                 if (empService.update(emp)) {
 
                     setMsgAndUrl("vo.edit.success.msg", "emp.list", modelAndView);
@@ -134,8 +134,29 @@ public class EmpAction extends AbstractActionAdapter {
 
     }
 
+    @RequestMapping("checkName")
+    @ResponseBody
+    public boolean checkName(Emp emp, HttpServletRequest request) {
+        String oldName = request.getParameter("oldName");
+        if (oldName.equals(emp.getName())) {
+            return true;
+        }
+        try {
+            boolean flag = empService.findByName(emp);
+            return flag;
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+        return false;
+    }
+
     @Override
     String setUploadPath() {
         return "/upload/emp/";
+    }
+
+    @Override
+    String setUrl() {
+        return "/pages/emp/list";
     }
 }

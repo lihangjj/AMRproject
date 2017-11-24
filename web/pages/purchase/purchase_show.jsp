@@ -13,7 +13,7 @@
 <head>
 <base href="<%=basePath%>">
 <jsp:include page="/pages/plugins/include_javascript_head.jsp" />
-<script type="text/javascript" src="js/pages/purchase/purchase_list.js"></script>
+<script type="text/javascript" src="/js/pages/purchase/purchase_list.js"></script>
 <script type="text/javascript">
 	var pid = ${purchase.pid} ;
 </script>
@@ -71,7 +71,7 @@
 						</div> 
 						<div class="row">&nbsp;</div>
 						<c:if test="${purchase.status == 0}">
-							<c:if test="${emp.dept.did == 5 and emp.level.lid == 4}">
+							<c:if test="${isFinance}">
 								<div class="row" id="auditDiv">
 									<div class="col-xs-4 col-xs-push-3">
 										<button type="button" id="passBut" class="btn btn-primary btn-lg">审核通过</button>
@@ -79,6 +79,9 @@
 									</div>  
 								</div>
 							</c:if>
+						</c:if>
+						<c:if test="${purchase.status==1}">
+							<button type="button" class="btn btn-success btn-lg" disabled>审核已通过</button>
 						</c:if>
 						<!-- /.box-body -->
 						<jsp:include page="/pages/plugins/include_alert.jsp"/>

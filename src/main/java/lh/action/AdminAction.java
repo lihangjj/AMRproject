@@ -99,10 +99,8 @@ public class AdminAction extends AbstractActionAdapter {
             ModelAndView modelAndView = new ModelAndView("/admin/admin_list");
             try {
                 columnData="管理员编号:eid|管理员名字:name|管理员电话:phone|管理员工资:salary";
-                url="/pages/admin/list";
                 handSplit(request);
                 Map<String, Object> map = empService.listSplit(column, keyWord, currentPage, lineSize);
-                System.out.println(map);
                 modelAndView.addAllObjects(map);
 
             } catch (Exception e) {
@@ -120,5 +118,10 @@ public class AdminAction extends AbstractActionAdapter {
     @Override
     String setUploadPath() {
         return "/upload/emp/";
+    }
+
+    @Override
+    String setUrl() {
+        return "/pages/admin/list";
     }
 }

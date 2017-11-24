@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="lh.dao.ITakeDAO">
+    <insert id="doCreate" parameterType="Take">
+       INSERT  into take(geid,beid,rid,gdate,rdate,note,amount,status)
+       VALUES(#{geid},#{beid},#{rid},#{gdate},#{rdate},#{note},#{amount},#{status})
+   </insert>
+    <select id="findByEidAndRid" parameterType="Take" resultType="Take">
+        SELECT tkid,geid,beid,rid,gdate,rdate,note,amount,status from take where geid=#{geid} and rid=#{rid}
+    </select>
+    <select id="findById" parameterType="Take" resultType="Take">
+        SELECT tkid,geid,beid,rid,gdate,rdate,note,amount,status from take where tkid=#{tkid}
+    </select>
+    <update id="doUpdateAmount" parameterType="Take">
+        UPDATE take set amount=amount+1 where tkid=#{tkid}
+    </update>
+    <update id="editTake" parameterType="Take">
+        UPDATE take set amount=#{amount} where tkid=#{tkid} and geid=#{geid}
+    </update>
+    <update id="doUpdateStatus" parameterType="Take">
+        UPDATE take set status=#{status},gdate=#{gdate} where tkid=#{tkid}
+    </update>
+    <update id="editRflag" parameterType="Take">
+        UPDATE take set status=#{status} where tkid=#{tkid}
+    </update>
+    <update id="updateStatus" parameterType="Take">
+        UPDATE take set status=#{status} where tkid=#{tkid}
+    </update>
+    <select id="findByGeid" parameterType="int" resultType="Take">
+              SELECT tkid,geid,beid,rid,gdate,rdate,note,amount,status from take where geid=#{geid}
+    </select>
+    <delete id="delete" parameterType="int">
+        DELETE from take where tkid=#{tkid}
+    </delete>
+    <select id="findByGeidAndStatus" parameterType="Map" resultType="Take">
+                      SELECT tkid,geid,beid,rid,gdate,rdate,note,amount,status from take
+                      where geid=#{geid} AND status is not NULL
+                      limit #{start},#{lineSize}
+    </select>
+    <select id="findByGeidAndStatusCount" parameterType="Map" resultType="int">
+                      SELECT count(*) from take
+                      where geid=#{geid} AND status is not NULL
+    </select>
+    <select id="listSplit" parameterType="Map" resultType="Take">
+        SELECT tkid,geid,beid,rid,gdate,rdate,note,amount,status from take
+        where status is not null
+        <if test="keyWord!=null">
+            AND ${column} like #{keyWord}
+
+        </if>
+        limit #{start},#{lineSize}
+    </select>
+    <select id="listSplitCount" parameterType="Map" resultType="int">
+        SELECT count(*) from take
+        where status is not null
+        <if test="keyWord!=null">
+            AND ${column} like #{keyWord}
+        </if>
+    </select>
+
+</mapper>

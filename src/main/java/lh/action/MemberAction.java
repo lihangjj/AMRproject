@@ -25,9 +25,7 @@ public class MemberAction extends AbstractAction {
 
     @RequestMapping("add")
     public ModelAndView add(Member member) {
-        log.info(member);
         try {
-            log.info(memberService.add(member));
         } catch (Exception e) {
             e.printStackTrace();
         }

@@ -30,6 +30,8 @@
 							<h3 class="box-title"><strong>办公用品购买清单</strong></h3>
 						</div>
 						<!-- /.box-header -->
+						<jsp:include page="/pages/plugins/search.jsp"/>
+
 						<div class="box-body table-responsive no-padding">
 							<table class="table table-hover">
 								<tr>
@@ -40,7 +42,7 @@
 								</tr>
 								<c:forEach items="${allPurchases}" var="purchase">
 									<tr>
-										<td><a href="pages/purchase/show5.action?pid=${purchase.pid}">${purchase.title}</a></td>
+										<td><a href="/pages/purchase/showDetails?pid=${purchase.pid}">${purchase.title}</a></td>
 										<td><fmt:formatDate value="${purchase.pubdate}" dateStyle="default" type="both"/></td>
 										<td>￥${purchase.total}</td>
 										<td>
@@ -59,7 +61,7 @@
 							</table>
 						</div>
 						<!-- /.box-body -->
-						<jsp:include page="/pages/plugins/split_page_plugin_bar.jsp"/>
+						<jsp:include page="/pages/plugins/split_bar.jsp"/>
 					</div>
 					<!-- /.box -->
 				</div>

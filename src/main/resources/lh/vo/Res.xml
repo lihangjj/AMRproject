@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="lh.dao.IResDAO">
+    <insert id="doCreate" parameterType="Res">
+       INSERT into res(rid,tid,stid,title,price,indate,photo,rflag,amount)
+       values(#{rid},#{tid},#{stid},#{title},#{price},#{indate},#{photo},#{rflag},#{amount})
+   </insert>
+    <select id="listSplit" parameterType="Map" resultType="Res">
+        SELECT rid,tid,stid,title,price,indate,photo,rflag,amount from res
+        <if test="keyWord!=null">
+            <where>
+                ${column} like #{keyWord}
+            </where>
+        </if>
+        order by indate
+        limit #{start},#{lineSize}
+    </select>
+    <select id="listSplitCount" parameterType="Map" resultType="int">
+        SELECT COUNT(*) from res
+        <if test="keyWord!=null">
+            <where>
+                ${column} like #{keyWord}
+            </where>
+        </if>
+    </select>
+
+    <update id="updateAppendAmount" parameterType="int">
+        UPDATE details set amount=amount+1 where did=#{did}
+    </update>
+
+
+
+    <update id="updateResAmount" parameterType="Res">
+        UPDATE res set amount=#{amount} where rid=#{rid}
+    </update>
+    <select id="findDetailsByRid" resultType="Details">
+        SELECT did from details where pid is null and rid=#{rid} and eid=#{eid}
+    </select>
+
+    <select id="findById" parameterType="int" resultType="Res">
+        SELECT rid,tid,stid,title,price,indate,photo,rflag,amount from res where rid=#{rid}
+    </select>
+</mapper>
